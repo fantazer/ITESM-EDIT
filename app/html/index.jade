@@ -1,0 +1,141 @@
+//Include style
+include ./block_html/style.jade
+body
+	//Include header
+	include ./block_html/header.jade
+	include ./block_html/elements/const.jade
+
+.header
+	.header-el-left
+		a(href="#").logo
+			span ITESM
+		.header-search
+			input(type="h")
+			.icon-Search
+	.header-el-right
+		.header-icon
+			a(href="#").icon-notification
+				span 4
+			a(href="#").icon-message
+		.header-prof
+			.header-prof-info
+					.type Иванов Иван
+					.type-small инженер отдела автоматизации
+			.header-prof-img
+					img(src="img/avatar.jpg", alt="")
+			.header-prof-sub-wrap
+				.header-prof-sub
+					a(href="#").header-prof-sub-el
+						i.icon-EditPerfomance
+						span.type-mid Редактировать профиль
+					a(href="#").header-prof-sub-el
+						i.icon-exit
+						span.type-mid Выйти из системы
+
+.wraper
+	.left-col
+		ul
+			li
+				span Мои страницы
+				ul.left-col-sub
+					li.left-col-active
+						a(href="#") Рабочее место
+					li
+						a(href="#") Моя страница
+					li
+						a(href="#") Каталог услуг
+					li
+						a(href="#") Мои задачи
+					li
+						a(href="#") База знаний
+					li
+						a(href="#") Мои настройки
+			li 
+				span Управление инцидентами
+			li 
+				span Управление запросами на обслуживание
+			li
+				span Управление проблемами
+			li 
+				span Управление изменениями
+
+	.content-col
+		.top-tab-menu
+			a(href="#").top-tab-menu-active Агрегация
+			a(href="#") Инциденты
+			a(href="#") Запросы на обслуживание
+			a(href="#") Запросы на изменениер
+			a(href="#") Задачи
+			a(href="#") Согласования
+		.row-flex.top-row-button
+			a(href="#").icon-btn.icon-btn-active.icon-Add2
+			a(href="#").icon-btn.icon-Edit
+			a(href="#").icon-btn.icon-Delete
+			a(href="#").icon-btn.icon-Filter
+			a(href="#").icon-btn.icon-panel
+			select.select.select-dark
+				option(value="1") Выгрузить
+				option(value="1") Добавить
+				option(value="1") Изменить
+
+			select.select
+				option(value="1") Групповое действие
+				option(value="1") Удалить все
+				option(value="1") Внести изменения
+
+		//Table
+		table.data-table
+			thead
+				tr
+					th
+						input(type="checkbox")
+						span Событие
+					th 
+						span Статус
+					th 
+						span Приоритет
+					th 
+						span Пользователь
+					th 
+						span Ответственный
+					th 
+						span Дата создания
+					th 
+						span Дата решения
+					th 
+						span Потраченное время
+			tbody
+			- for (var a = 0; a < 8; a++)
+				tr
+					td.row-flex
+						input(type="checkbox")
+						.col-flex
+							span У меня что-то сломалось.
+							a(href="#") SR0000000370
+					td
+						span Запрос информации
+					td
+						span Нормальный
+					td
+						span Федоров Андрей Владимирович
+					td
+						.row-flex
+							.table-avatar
+								img(src="img/avatar.jpg", alt="")
+							.table-avatar-info
+								a(href="#") Иванов Иван
+								.type-small Администрирование сети
+					td
+						span 05.02.2016 12:53
+					td
+						span 08.02.2016 09:53
+					td
+						.table-progress
+							.table-progress-bar(data-pogress='45')
+							.table-progress-val 45%
+
+					
+//Include footer
+include ./block_html/script.jade
+
+

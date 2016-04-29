@@ -1,0 +1,295 @@
+@import "icon/*"
+@import 'axis'
+@import 'jeet'
+@import 'rupture'
+@import "variable/*"
+
+border-box-html()
+fluid-media() //care flex box image
+rupture.scale = 0 320px 640px 768px 1024px 1280px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 
+jeet.gutter = 1
+
+.allpage
+	background #eee
+	wraper
+		background white
+		height 100vh
+		a
+			padding 20px
+			display block
+			box-shadow 1px 1px 20px #eee
+			margin-bottom 10px
+			border-radius 5px
+			tr(all)
+			&:hover
+				background #6D2D74
+				color white
+wraper
+	center(1200px)
+	padding 20px
+
+body
+	color #565d6b
+	font-family Helvetica
+	font-size 14px
+	font-weight 400
+	line-height 17px
+input,textarea
+	outline none
+bsh()
+	box-shadow 0px 3px 8px #CBC6C6
+a
+	color #565d6b
+.row-flex
+	flex(mid)
+	justify-content flex-start
+	
+
+
+//=== Header ===
+.header
+	height 80px
+	flex(between)
+	bsh()
+.header-el-left
+	flex(mid)
+	width 50%
+	justify-content flex-start
+.header-el-right
+	flex(mid)
+	width 50%
+	justify-content flex-end
+	height 100%
+.logo
+	flex(mid)
+	flex-basis 240px
+	min-width 240px
+	font-size 36px
+	font-weight 700
+	line-height 43px
+	color blue 
+.header-search
+	position relative
+	width 70%
+	input
+		width 100%
+		padding 10px
+		background white
+		border 0px
+		border-bottom 1px solid blue
+		width 100%
+	.icon-Search
+		position absolute
+		font-size 28px
+		color blue
+		right 0px
+		top 50%
+		margin-top -18px
+.header-icon
+	border-right 1px solid grey
+	height 100%
+	flex(mid)
+	.icon-notification
+		position relative
+		span
+			position absolute
+			font-size 10px
+			width 15px
+			height 15px
+			background red
+			border-radius  50%
+			text-align center
+			color white
+			left 15px
+			top -5px
+			line-height 14px
+	a
+		font-size 28px
+		margin 0 20px
+		color blue
+.header-prof 
+	flex(mid)
+	min-width 300px
+	position relative
+.header-prof-info
+	text-align right
+.header-prof-img
+	&:hover
+		cursor pointer
+	img
+		width 50px
+		border-radius 50%
+		bsh()
+		margin-left 10px
+.header-prof-sub-wrap
+	display none
+.header-prof-sub
+	position absolute 
+	top 65px
+	left 0
+	width 100%
+	background white
+	flex(mid)
+	fl()
+	bsh()
+.header-prof-sub-el
+	width 90%
+	display block
+	flex(mid)
+	padding 10px
+	i
+		font-size 28px
+		color blue
+		margin-right 10px
+	.icon-exit
+		font-size 16px
+.wraper 
+	f()
+	height calc(100vh - 80px)
+	
+//=== Left-col ===
+
+.left-col
+	min-width 240px
+	width 240px
+	background blue
+	padding-top 60px
+	ul
+		list-style none
+	li
+		color white
+	a
+		color white
+		display block
+		padding 10px 10px 10px 60px
+		tr(all)
+		&:hover
+			color red
+			background #c3e6f4
+.left-col > ul > li
+	margin-bottom 10px
+	&:hover
+		cursor pointer
+	span
+		padding-left 40px
+		display block
+		position relative
+		margin-bottom 10px
+		&:before
+			content ' \e911 '
+			font-family 'icomoon' !important
+			position absolute
+			left 15px
+			color white
+			tr(all)
+			
+.left-col-active
+	a
+		color red
+		background #c3e6f4
+		
+.left-col-sub
+	display none
+.left-col-sub-active
+	span
+		&:before
+			content ' \e911 '
+			font-family 'icomoon' !important
+			transform rotate(-90deg)
+
+// main-cont
+.content-col
+	flex-basis 100%
+	background lightblue
+	padding 40px
+
+
+.top-tab-menu
+	border-bottom 1px solid grey
+	margin-bottom 50px
+	a
+		display inline-block
+		padding 20px
+
+.top-tab-menu-active
+	color red
+	border-bottom 1px solid red
+
+//Icon
+.icon-btn
+	width 40px
+	height 40px
+	border-radius 50%
+	border 1px solid blue
+	font-size 30px
+	text-align center
+	color blue
+	line-height 40px
+	margin 0 10px
+	tr(all)
+	&:hover
+		color red
+		border 1px solid red
+
+.icon-btn-active
+	color red
+	border 1px solid red
+	
+.icon-panel
+	font-size 22px
+	line-height 38px
+	
+.select,select:focus
+	border-radius 25px
+	margin 0 10px
+	border 1px solid blue
+	color blue
+.nice-select:after
+	border-bottom 2px solid blue
+	border-right 2px solid blue
+	
+.nice-select:active, .nice-select.open, .nice-select:focus	
+	border-color blue
+
+.select-dark
+	.current
+		color white
+	background blue
+
+.select-dark.nice-select:after
+		border-bottom 2px solid white!important
+		border-right 2px solid white!important
+
+.top-row-button
+	margin-bottom 40px
+	
+.data-table
+	width 100%
+	thead
+		background-color rgba(230, 243, 250, 0.7)
+		height 60px
+		tr
+			height 60px
+			th
+				font-weight 300
+				width auto
+				text-align left
+				padding 0px 20px
+	td
+		padding 20px
+	input[type="checkbox"]
+		margin-right 10px	
+.table-avatar
+	width 25px
+	height 25px
+	border-radius 50%
+	margin-right 10px	
+	img
+		border-radius 50%
+	bsh()
+//.table-avatar-info
+
+.col-flex
+	f()
+	fl()

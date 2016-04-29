@@ -1,0 +1,306 @@
+
+<!--Include style--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Document</title>
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css"/>
+    <!--link(rel="stylesheet", href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css")-->
+    <!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
+    <!--link(rel="stylesheet", href="bower/owl.carousel/dist/assets/owl.carousel.css")-->
+    <!--endbuild-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
+  </head>
+</html>
+<body>
+  <!--Include header-->
+</body>
+<div class="header">
+  <div class="header-el-left"><a href="#" class="logo"><span>ITESM</span></a>
+    <div class="header-search">
+      <input type="h"/>
+      <div class="icon-Search"></div>
+    </div>
+  </div>
+  <div class="header-el-right">
+    <div class="header-icon"><a href="#" class="icon-notification"><span>4</span></a><a href="#" class="icon-message"></a></div>
+    <div class="header-prof">
+      <div class="header-prof-info">
+        <div class="type">Иванов Иван</div>
+        <div class="type-small">инженер отдела автоматизации</div>
+      </div>
+      <div class="header-prof-img"><img src="img/avatar.jpg" alt=""/></div>
+      <div class="header-prof-sub-wrap">
+        <div class="header-prof-sub"><a href="#" class="header-prof-sub-el"><i class="icon-EditPerfomance"></i><span class="type-mid">Редактировать профиль</span></a><a href="#" class="header-prof-sub-el"><i class="icon-exit"></i><span class="type-mid">Выйти из системы</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wraper">
+  <div class="left-col">
+    <ul>
+      <li><span>Мои страницы</span>
+        <ul class="left-col-sub">
+          <li class="left-col-active"><a href="#">Рабочее место</a></li>
+          <li><a href="#">Моя страница</a></li>
+          <li><a href="#">Каталог услуг</a></li>
+          <li><a href="#">Мои задачи</a></li>
+          <li><a href="#">База знаний</a></li>
+          <li><a href="#">Мои настройки</a></li>
+        </ul>
+      </li>
+      <li> <span>Управление инцидентами</span></li>
+      <li> <span>Управление запросами на обслуживание</span></li>
+      <li><span>Управление проблемами</span></li>
+      <li> <span>Управление изменениями</span></li>
+    </ul>
+  </div>
+  <div class="content-col">
+    <div class="top-tab-menu"><a href="#" class="top-tab-menu-active">Агрегация</a><a href="#">Инциденты</a><a href="#">Запросы на обслуживание</a><a href="#">Запросы на изменениер</a><a href="#">Задачи</a><a href="#">Согласования</a></div>
+    <div class="row-flex top-row-button"><a href="#" class="icon-btn icon-btn-active icon-Add2"></a><a href="#" class="icon-btn icon-Edit"></a><a href="#" class="icon-btn icon-Delete"></a><a href="#" class="icon-btn icon-Filter"></a><a href="#" class="icon-btn icon-panel"></a>
+      <select class="select select-dark">
+        <option value="1">Выгрузить</option>
+        <option value="1">Добавить</option>
+        <option value="1">Изменить</option>
+      </select>
+      <select class="select">
+        <option value="1">Групповое действие</option>
+        <option value="1">Удалить все</option>
+        <option value="1">Внести изменения</option>
+      </select>
+    </div>
+    <!--Table-->
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox"/><span>Событие</span>
+          </th>
+          <th> <span>Статус</span></th>
+          <th> <span>Приоритет</span></th>
+          <th> <span>Пользователь</span></th>
+          <th> <span>Ответственный</span></th>
+          <th> <span>Дата создания</span></th>
+          <th> <span>Дата решения</span></th>
+          <th> <span>Потраченное время</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-flex">
+          <input type="checkbox"/>
+          <div class="col-flex"><span>У меня что-то сломалось.</span><a href="#">SR0000000370</a></div>
+        </td>
+        <td><span>Запрос информации</span></td>
+        <td><span>Нормальный</span></td>
+        <td><span>Федоров Андрей Владимирович</span></td>
+        <td>
+          <div class="row-flex">
+            <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+            <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+              <div class="type-small">Администрирование сети</div>
+            </div>
+          </div>
+        </td>
+        <td><span>05.02.2016 12:53</span></td>
+        <td><span>08.02.2016 09:53</span></td>
+        <td>
+          <div class="table-progress">
+            <div data-pogress="45" class="table-progress-bar"></div>
+            <div class="table-progress-val">45%</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--Include footer-->
+<!--build:js js/combined.js-->
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<!--script(src="bower/owl.carousel/dist/owl.carousel.min.js")-->
+<!--script(src="bower/bPopup/jquery.bpopup.min.js")-->
+<script src="js/jquery.smoothscroll.js"></script>
+<!--script(src="bower/Headhesive.js/dist/headhesive.min.js")-->
+<!-- endbuild-->
+<script src="js/script.js"></script>
