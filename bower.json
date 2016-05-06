@@ -20,6 +20,10 @@
   },
   "devDependencies": {
     "flexbox-grid-stylus": "^3.1.0",
-    "jquery-nice-select": "*"
+    "jquery-nice-select": "*",
+    "bootstrap-datepicker": "^1.6.0",
+    "nouislider": "^8.5.1",
+    "bPopup": "bpopup#^0.11.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.3"
   }
 }

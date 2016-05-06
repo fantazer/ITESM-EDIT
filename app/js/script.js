@@ -26,7 +26,7 @@ $(document).ready(function(){
 	var hideToggle = function(targetClick,toggleEl) {
 		$(targetClick).click(function(event){
 				event.stopPropagation();
-				$(toggleEl).slideToggle("fast");
+				$(toggleEl).slideToggle();
 		});
 		$(toggleEl).on("click", function (event) {
 			event.stopPropagation();
@@ -43,9 +43,112 @@ $(document).ready(function(){
 
 	//Toggle profile
 	hideToggle('.header-prof-img','.header-prof-sub-wrap');
+	hideToggle('.table-prior','.table-prior-wraper');
+	hideToggle('.col-content .icon-Information','.infomation-block');
+	
+	//Toggle filter-sub
+	$('.filter-sub').click(function(){
+		$(this).find('.filter-sub-wrap').slideToggle();
+		$(this).toggleClass('filter-sub-active');
+	})
 
 	//Select
 	$('.select').niceSelect();
+
+	//Progress bar
+	$('.table-progress-val').each(function(){
+		var progress = $(this).data('progress');
+		$(this).css('width',progress+'%')
+		if(progress<30 && progress>0){
+			$(this).css('background-color','#00B8DF')
+		}
+		if(progress<50 && progress>30){
+			$(this).css('background-color','#00CE74')
+		}
+		if( progress>70){
+			$(this).css('background-color','#E1523E')
+		}
+	})
+
+	//TogleButton
+	$('.top-row-button .icon-btn').click(function(){
+		$('.top-row-button .icon-btn').removeClass('icon-btn-active');
+		$(this).addClass('icon-btn-active');
+	})
+
+	//Filter DataTable
+	$('.top-row-button .icon-Filter').click(function(){
+		$('.data-table-title').toggleClass('data-table-title-change');
+	})
+	$('.data-table-title').click(function(){
+		$(this).toggleClass('data-table-title-active');
+	})
+
+	//Slide range slider
+	$('.get-rangeslider').click(function(){
+		$('.range-slider').toggleClass('hidden');
+	})
+
+	//Slide forms
+	$('.title-toggle-hide').click(function(){
+		$(this).next('.col-content').slideToggle();
+	})
+
+	//Active input
+	$('.input-row').click(function(){
+		$(this).find('span').toggleClass('text-red');
+	})
+
+	//Range-slider
+	var slider = document.getElementById('rangeSlider'); //Элемент
+	if(slider){
+		noUiSlider.create(slider, {
+			start: [0, 100],
+			connect: true,
+			step: 10,
+			orientation: 'vertical',
+			range: {
+				'min': 0,
+				'max': 100,
+			},
+			pips: { // Show a scale with the slider
+				mode: 'steps',
+				density: 4
+			}
+		})
+	}
+
+	//Modal
+	$('.get-modal').click(function(){
+		$('.modal').bPopup({
+					closeClass:'modal-close',
+					position:['auto','auto'],
+					follow: [true,false],
+		 	}); 
+		})
+		$('.get-modal').click();
+	// Change postion coner
+		var posConer = 0
+		$('.modal-content-coner').each(function(){
+			posConer = posConer +58
+			$(this).css('left', posConer+'px')
+		})
+
+
+	//Tabcontrol modal
+	$('.modal-head .icon-btn').click(function(){
+		var modalIcon = $(this).data('modalicon');
+		$('.modal-content').each(function(){
+			$(this).addClass('hidden');
+			var modalContent = $(this).data('modalcontetn');
+			if(modalIcon === modalContent) {
+				$(this).removeClass('hidden');
+			}
+		})
+	})
+
+	//Style scroll
+	$(".scroll").mCustomScrollbar();
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)
@@ -72,36 +175,25 @@ $(document).ready(function(){
 		/* ###### init datepicker  ######*/
 		/* ###### bower i bootstrap-datepicker  ######*/
 		/* ###### https://gist.github.com/fantazer/de1d6079f71350c32afbb5eb442f38db  ######*/
-		/*$('.input-date').datepicker({
-			language: 'ru'
+		
+		//DatePicker config
+		$('.get-datapicker').datepicker({
+			language: 'ru',
+			orientation: " bottom"
 		});
 		//for close on select date
 		$('.input-date').on('changeDate', function(ev){
-		    $(this).datepicker('hide');
+			$(this).datepicker('hide');
 		});
 
-*/
+
 
 
 	/* ###### init RangeSLider  ######*/
 	/* ###### bower i --save-dev nouislider  ######*/
 	/* ###### https://gist.github.com/fantazer/2bdc4e6a63708e143718ffa7c32eae17  ######*/
 
-	/*var slider = document.getElementById('rangeSlider'); //Элемент
-
-	noUiSlider.create(slider, {
-		start: [0, 100],
-		connect: true,
-		step: 10,
-		range: {
-			'min': 0,
-			'max': 100,
-		},
-		pips: { // Show a scale with the slider
-			mode: 'steps',
-			density: 4
-		}
-	});*/
+	/*;*/
 
 
 	/* ###### init bpopup  ######*/

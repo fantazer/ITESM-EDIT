@@ -1,7 +1,199 @@
-<!DOCTYPE html>
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	title Document
+//Include style
+include ./block_html/style.jade
 body
+
+	include ./block_html/elements/const.jade
 	
+	//Include header
+	include ./block_html/header.jade
+	.wraper
+		include ./block_html/left-menu.jade
+		.content-col
+			
+			.breadcrumbs
+				a(href="#") Список инцидентов
+				a(href="#") Инцидент SR0000000370
+			.row-flex.top-row-button
+				a(href="#").main-button.main-button-dark Сохранить
+				a(href="#").main-button Отменить
+
+			.top-tab-menu.top-tab-menu-near
+				a(href="#").top-tab-menu-active Параметры
+				a(href="#") Связи
+				a(href="#") Учет времение
+				a(href="#") Журнал событий
+				a(href="#") Журнал изменений
+			
+			.wraper-border
+				.grid
+					.row
+						//left-partr
+						.col.col--md-6
+							.wraper-white
+								//Title col
+								.title-toggle-hide
+									.row-flex
+										.icon-arrows
+										.type Основные параметры
+								//Content
+								.col-content
+									.row
+										.col.col--md-6
+											+inputRow('Номер','Default value')
+										.col.col--md-6
+											+inputRow('Статус','Default value')
+										.col.col--md-12
+											+inputRow('Пользователь','Default value')
+											.icon-Information
+											//Information window
+											.infomation-block
+												.infomation-block-wraper
+													.infomation-block-title
+														.type Иванов Иван Иванович
+													.infomation-block-el
+														.type-mid Подразделение
+														.type ЗАО «ИТ Эксперт»
+													.infomation-block-el
+														.type-mid Местоположение
+														.type Офис «ИТ Эксперт» (Каланчевская 15)
+													.infomation-block-el
+														.type-mid Должность
+														.type Старший консультант
+													.infomation-block-el
+														.type-mid Логин AD
+														.type Логин
+													.infomation-block-el
+														.type-mid E-mail
+														.type i.ivanov@itexpert.ru
+													.infomation-block-el
+														.type-mid Телефон
+														.type 8 911 565 56 56
+										.col.col--md-12
+											+inputRow('Где искать','Default value')
+										.col.col--md-6
+											+inputRow('Услуга','Default value')
+										.col.col--md-6
+											+inputRow('Приоритет','Default value')
+										.col.col--md-6
+											+inputRow('Степень вовлеченности','Default value')
+										.col.col--md-6
+											+inputRow('Степень влияния','Default value')
+										.col.col--md-6
+											+inputRow('Ответсвенная группа','Default value')
+										.col.col--md-6
+											+inputRow('Ответственный сотрудник','Default value')
+											.icon-Information
+										.col.col--md-6
+											+inputRow('Способы обращения','Default value')
+										.col.col--md-6
+											+inputRow('Тип','Default value')
+										.col.col--md-12
+											+inputRow('Тема','Default value')
+										.col.col--md-12
+											+inputRow('Описание','Default value')
+						//right-part
+						.col.col--md-6
+							//El
+							.wraper-white
+								.title-toggle-hide
+									.row-flex
+										.icon-arrows
+										.type Временные характеристики
+								//Content
+								.col-content
+									.row
+										.col.col--md-6
+											+inputRow('Дата создания','Default value')
+										.col.col--md-6
+											.input-row.input-row-progress
+												span Плановая дата решения
+												input.get-datapicker(type="text", placeholder="Default value")
+											.table-progress.progress-think
+												.table-progress-bar
+													.table-progress-val(data-progress='45')
+										.col.col--md-6
+											+inputRow('SLA','Default value')
+										.col.col--md-6
+											.input-row.input-row-progress
+												span Регламентская дата решения
+												input.get-datapicker(type="text", placeholder="Default value")
+											.table-progress.progress-think
+												.table-progress-bar
+													.table-progress-val(data-progress='45')
+										.col.col--md-6
+											+inputRow('SLA','Default value')
+										.col.col--md-6
+											+inputRow('SLA','Default value')
+										.col.col--md-6
+											+inputRow('SLA','Default value')
+							//El
+							.wraper-white
+								.title-toggle-hide
+									.row-flex
+										.icon-arrows
+										.type Задачи и согласования
+							//El
+							.wraper-white
+								.title-toggle-hide
+									.row-flex
+										.icon-arrows
+										.type Диагностика и решение
+							//El
+							.wraper-white
+								.title-toggle-hide
+									.row-flex
+										.icon-arrows
+										.type Файлы
+				//Table
+				.top-tab-menu.top-tab-menu-near
+					a(href="#").top-tab-menu-active Параметры
+					a(href="#") Связи
+					a(href="#") Учет времение
+					a(href="#") Журнал событий
+					a(href="#") Журнал изменений
+				.wraper-border
+					.table-nav
+						.table-count
+							.row-flex
+								.type Колличество строк
+								select.select.select-simple
+									option(value="1") 10
+									option(value="1") 20
+									option(value="1") 30
+						.table-page
+							- for (var a = 0; a < 5; a++)
+								.table-page-el
+									span #{a+1} 
+					table.data-table
+						thead
+							tr
+								th
+									div.row-flex
+										span.data-table-title №
+								th
+									span.data-table-title Название
+										.icon-arrows
+								th
+									span.data-table-title Описание
+								th
+									span.data-table-title Дата и время
+								
+								th
+									span.data-table-title Автор
+						tbody
+						- for (var c = 0; c < 4; c++)
+							tr
+								td
+									span #{c+1}
+								td
+									a(href="#") SR0000000370
+								td
+									span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis quae voluptatem, aut, delectus illum eaque, repudiandae autem doloremque expedita sit minus enim totam eligendi. Voluptatem nulla, nihil reiciendis magni!
+								td
+									span 10.12.2015
+								td
+									span Федоров Андрей Владимирович
+//Include footer
+include ./block_html/script.jade
+
+

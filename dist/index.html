@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
     <title>Document</title>
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/style.css"/>
@@ -12,20 +13,846 @@
 </html>
 <body>
   <!--Include header-->
-  <wraper>
-    <div class="cont">
-      <H1>Введите ваш номер</H1>
-      <input type="text"/>
-      <div class="but">выбрать</div>
+  <div class="header">
+    <div class="header-el-left"><a href="#" class="logo"><span>ITESM</span></a>
+      <div class="header-search">
+        <input type="h"/>
+        <div class="icon-Search"></div>
+      </div>
     </div>
-    <div class="price">
-      <h1>Вы выиграли ПРИИИИЗ!</h1><img src="http://1mag.kz/media/thumbs/50/72/watermarked/8d21d55681fb364a51ebc5851143081b3f1e7d4e.jpg" alt=""/>
+    <div class="header-el-right">
+      <div class="header-icon"><a href="#" class="icon-notification"><span>4</span></a><a href="#" class="icon-message"></a></div>
+      <div class="header-prof">
+        <div class="header-prof-info">
+          <div class="type">Иванов Иван</div>
+          <div class="type-small">инженер отдела автоматизации</div>
+        </div>
+        <div class="header-prof-img"><img src="img/avatar.jpg" alt=""/></div>
+        <div class="header-prof-sub-wrap">
+          <div class="header-prof-sub"><a href="#" class="header-prof-sub-el"><i class="icon-EditPerfomance"></i><span class="type-mid">Редактировать профиль</span></a><a href="#" class="header-prof-sub-el"><i class="icon-exit"></i><span class="type-mid">Выйти из системы</span></a></div>
+        </div>
+      </div>
     </div>
-  </wraper>
+  </div>
+  <div class="wraper">
+    <div class="left-col">
+      <ul>
+        <li><span>Мои страницы</span>
+          <ul class="left-col-sub">
+            <li class="left-col-active"><a href="#">Рабочее место</a></li>
+            <li><a href="#">Моя страница</a></li>
+            <li><a href="#">Каталог услуг</a></li>
+            <li><a href="#">Мои задачи</a></li>
+            <li><a href="#">База знаний</a></li>
+            <li><a href="#">Мои настройки</a></li>
+          </ul>
+        </li>
+        <li> <span>Управление инцидентами</span></li>
+        <li> <span>Управление запросами на обслуживание</span></li>
+        <li><span>Управление проблемами</span></li>
+        <li> <span>Управление изменениями</span></li>
+      </ul>
+    </div>
+    <div class="content-col">
+      <div class="top-tab-menu"><a href="#" class="top-tab-menu-active">Агрегация</a><a href="#">Инциденты</a><a href="#">Запросы на обслуживание</a><a href="#">Запросы на изменениер</a><a href="#">Задачи</a><a href="#">Согласования</a></div>
+      <div class="row-flex top-row-button">
+        <div class="icon-btn icon-btn-active icon-Add2 get-modal"></div>
+        <div class="icon-btn icon-Edit get-modal"></div>
+        <div class="icon-btn icon-Delete"></div>
+        <div class="icon-btn icon-Filter"></div>
+        <div class="icon-btn icon-panel"></div>
+        <select class="select select-dark">
+          <option value="1">Выгрузить</option>
+          <option value="1">Добавить</option>
+          <option value="1">Изменить</option>
+        </select>
+        <select class="select">
+          <option value="1">Групповое действие</option>
+          <option value="1">Удалить все</option>
+          <option value="1">Внести изменения</option>
+        </select>
+      </div>
+      <!--Table-->
+      <div class="table-nav">
+        <div class="table-count">
+          <div class="row-flex">
+            <div class="type">Колличество строк</div>
+            <select class="select select-simple">
+              <option value="1">10</option>
+              <option value="1">20</option>
+              <option value="1">30</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-page">
+          <div class="table-page-el"><span>1 </span></div>
+          <div class="table-page-el"><span>2 </span></div>
+          <div class="table-page-el"><span>3 </span></div>
+          <div class="table-page-el"><span>4 </span></div>
+          <div class="table-page-el"><span>5 </span></div>
+        </div>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>
+              <div class="row-flex">
+                  <input id="Table-head" type="checkbox" name="rr"/>
+                  <label for="Table-head"> <span></span></label><span class="data-table-title">Событие
+                  <div class="icon-close"></div></span>
+              </div>
+            </th>
+            <th> <span class="data-table-title">Статус
+                <div class="icon-arrows"></div></span></th>
+            <th> <span class="data-table-title table-prior">Приоритет
+                <div class="icon-arrows"></div>
+                <div class="table-prior-wraper">
+                  <div class="row-flex">
+                    <input id="b0" type="checkbox" name="rr"/>
+                    <label for="b0"> <span></span></label>
+                    <text>Средний</text>
+                  </div>
+                  <div class="row-flex">
+                    <input id="b1" type="checkbox" name="rr"/>
+                    <label for="b1"> <span></span></label>
+                    <text>Средний</text>
+                  </div>
+                  <div class="row-flex">
+                    <input id="b2" type="checkbox" name="rr"/>
+                    <label for="b2"> <span></span></label>
+                    <text>Средний</text>
+                  </div>
+                  <div class="row-flex">
+                    <input id="b3" type="checkbox" name="rr"/>
+                    <label for="b3"> <span></span></label>
+                    <text>Средний</text>
+                  </div>
+                </div></span></th>
+            <th> <span class="data-table-title">Пользователь
+                <div class="icon-close"></div></span></th>
+            <th> <span class="data-table-title">Ответственный
+                <div class="icon-close"></div></span></th>
+            <th> <span class="data-table-title get-datapicker">Дата создания</span></th>
+            <th> <span class="data-table-title get-datapicker">Дата решения</span></th>
+            <th> <span class="data-table-title get-rangeslider">Потраченное время
+                <div class="icon-arrows"></div>
+                <div class="range-slider hidden">
+                  <div id="rangeSlider"></div>
+                </div></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tr>
+          <td class="row-flex">
+            <input id="c0" type="checkbox" name="rr"/>
+            <label for="c0"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c1" type="checkbox" name="rr"/>
+            <label for="c1"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c2" type="checkbox" name="rr"/>
+            <label for="c2"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c3" type="checkbox" name="rr"/>
+            <label for="c3"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c4" type="checkbox" name="rr"/>
+            <label for="c4"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c5" type="checkbox" name="rr"/>
+            <label for="c5"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c6" type="checkbox" name="rr"/>
+            <label for="c6"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="row-flex">
+            <input id="c7" type="checkbox" name="rr"/>
+            <label for="c7"> <span></span></label>
+            <div class="col-flex"><span>У меня что-то сломалось. </span><a href="#">SR0000000370</a></div>
+          </td>
+          <td><span>Запрос информации</span></td>
+          <td><span class="green-text">Нормальный</span></td>
+          <td><span>Федоров Андрей Владимирович</span></td>
+          <td>
+            <div class="row-flex">
+              <div class="table-avatar"><img src="img/avatar.jpg" alt=""/></div>
+              <div class="table-avatar-info"><a href="#">Иванов Иван</a>
+                <div class="type-small">Администрирование сети</div>
+              </div>
+            </div>
+          </td>
+          <td><span>05.02.2016 12:53</span></td>
+          <td><span>08.02.2016 09:53</span></td>
+          <td>
+            <div class="table-progress">
+              <div class="table-progress-bar">
+                <div data-progress="45" class="table-progress-val"></div>
+              </div><span>45%</span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!--M-->
+  <div class="modal">
+    <div class="modal-wraper">
+      <div class="modal-close">
+        <div class="icon-close"></div>
+      </div>
+      <div class="modal-head">
+        <div class="type modal-title">Режим создания представления</div>
+        <div class="row-flex">
+          <div data-modalicon="one" class="icon-btn icon-GeneralSettings icon-btn-active"></div>
+          <div data-modalicon="two" class="icon-btn icon-Filter"></div>
+          <div data-modalicon="three" class="icon-btn icon-Sorting"></div>
+          <div data-modalicon="four" class="icon-btn icon-Format"></div>
+          <div data-modalicon="" class="icon-btn icon-circle"></div>
+          <select class="select select-dark">
+            <option value="1">Сохранить</option>
+            <option value="1">Добавить</option>
+            <option value="1">Изменить</option>
+          </select>
+          <select class="select">
+            <option value="1">Сохранить как</option>
+            <option value="1">Удалить все</option>
+            <option value="1">Внести изменения</option>
+          </select>
+        </div>
+      </div>
+      <!--Modal one-->
+      <div data-modalcontetn="one" class="modal-content">
+        <div class="modal-content-coner"></div>
+        <div class="type modal-title">Общие настройки представления:</div>
+        <div class="col-modal">
+          <div class="row">
+            <div class="col col--md-6">
+                <div class="input-row"><span>Наименование представления</span>
+                  <input type="text" placeholder="Default value"/>
+                </div>
+            </div>
+            <div class="col col--md-6"></div>
+          </div>
+          <div class="row">
+            <div class="col col--md-6">
+              <div class="type">Список доступных свойств:</div>
+              <div class="property-cont scroll">
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--md-6">
+              <div class="type">Список свойств для удаления:
+                <div class="property-cont scroll">
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Услугa</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить и продолжить</a><a href="#" class="main-button">Сбросить все</a></div>
+      </div>
+      <!--Modal two-->
+      <div data-modalcontetn="two" class="modal-content hidden">
+        <div class="modal-content-coner"></div>
+        <div class="type modal-title">Общие настройки представления:</div>
+        <div class="col-modal">
+          <div class="row">
+            <div class="col col--md-6">
+                <div class="input-row"><span>Наименование представления</span>
+                  <input type="text" placeholder="Default value"/>
+                </div>
+            </div>
+            <div class="col col--md-6"></div>
+          </div>
+          <div class="row">
+            <div class="col col--md-6">
+              <div class="type">Список доступных свойств:</div>
+              <div class="property-cont">
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--md-6">
+              <div class="property-cont">
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Услуга</div>
+                  <div class="property-icon"><span>-</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить</a><a href="#" class="main-button">Отменить</a></div>
+      </div>
+      <!--Modal three-->
+      <div data-modalcontetn="three" class="modal-content hidden">
+        <div class="modal-content-coner"></div>
+        <div class="type modal-title">Настройка сортировки:</div>
+        <div class="row-flex"><a href="#" class="main-button">+ Добавить уровень</a></div>
+        <div class="col-modal">
+          <div class="row">
+            <div class="col col--md-8">
+              <div class="block-tools-sort scroll">
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wraper-block">
+                  <div class="type">Уровень 1</div>
+                  <div class="block-tools-sort-wraper close-block">
+                    <div class="icon-close"></div>
+                    <div class="row">
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col col--md-6">
+                          <div class="input-row"><span>Свойство</span>
+                            <select class="select select-light">
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                              <option value="1">Default value</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить и продолжить</a><a href="#" class="main-button">Сбросить все</a></div>
+      </div>
+      <!--Modal four-->
+      <div data-modalcontetn="four" class="modal-content hidden">
+        <div class="modal-content-coner"></div>
+        <div class="type modal-title">Настройка Фильтрации:</div>
+        <div class="col-modal">
+          <div class="row">
+            <div class="col col--md-8">
+              <div class="row">
+                <div class="col col--md-8">
+                    <div class="input-row"><span>Свойство</span>
+                      <input type="text" placeholder="Default value"/>
+                    </div>
+                </div>
+              </div>
+              <div class="type">Установка значения</div>
+              <div class="block-tools-filter scroll scroll-overflow">
+                <div class="block-tools-filter-title">Установка значения по реквизиту</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el filter-sub">Текущая дата
+                  <div class="filter-sub-wrap">
+                    <div class="filter-sub-el">дата </div>
+                    <div class="filter-sub-el">дата </div>
+                    <div class="filter-sub-el">дата </div>
+                    <div class="filter-sub-el">дата</div>
+                  </div>
+                </div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+                <div class="block-tools-filter-el">Текущая дата</div>
+              </div>
+              <div class="row-flex">
+                <select class="select select-light">
+                  <option value="1">+</option>
+                  <option value="1">-</option>
+                </select>
+                <select class="select select-light">
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                </select>
+                <select class="select select-light">
+                  <option value="1">минута</option>
+                  <option value="1">секунда</option>
+                  <option value="1">час</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить и продолжить</a><a href="#" class="main-button">Сбросить все </a></div>
+      </div>
+    </div>
+  </div>
 </body>
 <!--Include footer-->
-<script src="js/combined.js"></script>
-<script src="js/script.js"></script>
-<!--Include script-->
 <script src="js/combined.js"></script>
 <script src="js/script.js"></script>

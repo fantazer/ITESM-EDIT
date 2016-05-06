@@ -12,3 +12,21 @@
 	
 	]
 	
+mixin input(val)
+		input(id ='#{val}', type='checkbox', name='rr')
+		label(for ='#{val}') 
+			span
+
+mixin inputRow(val,text)
+		.input-row
+			span #{val}
+			input(type="text", placeholder="#{text}")
+
+mixin inputSelect(val,text)
+		.input-row
+			span #{val}
+			select.select.select-light
+				option(value="1") #{text}
+				option(value="1") #{text}
+				option(value="1") #{text}
+

@@ -28,24 +28,27 @@ jeet.gutter = 1
 wraper
 	center(1200px)
 	padding 20px
-
+.hidden
+	display none
 body
-	color #565d6b
+	color #777f90
 	font-family Helvetica
 	font-size 14px
 	font-weight 400
 	line-height 17px
 input,textarea
 	outline none
-bsh()
-	box-shadow 0px 3px 8px #CBC6C6
+
 a
-	color #565d6b
+	color blue
 .row-flex
 	flex(mid)
 	justify-content flex-start
-	
-
+	.main-button
+		&:first-child
+			margin-left 0
+.green-text
+	color green
 
 //=== Header ===
 .header
@@ -146,7 +149,7 @@ a
 		font-size 16px
 .wraper 
 	f()
-	height calc(100vh - 80px)
+	min-height calc(100vh - 80px)
 	
 //=== Left-col ===
 
@@ -231,10 +234,11 @@ a
 	&:hover
 		color red
 		border 1px solid red
+		cursor pointer
 
 .icon-btn-active
-	color red
-	border 1px solid red
+	color red!important
+	border 1px solid red!important
 	
 .icon-panel
 	font-size 22px
@@ -245,9 +249,15 @@ a
 	margin 0 10px
 	border 1px solid blue
 	color blue
-.nice-select:after
-	border-bottom 2px solid blue
-	border-right 2px solid blue
+
+.nice-select
+	.current
+		color textcolor
+	.option
+		color textcolor
+	&:after
+		border-bottom 2px solid textcolor
+		border-right 2px solid textcolor
 	
 .nice-select:active, .nice-select.open, .nice-select:focus	
 	border-color blue
@@ -263,7 +273,19 @@ a
 
 .top-row-button
 	margin-bottom 40px
-	
+
+.select-light
+	border  0px
+	width  100%
+	border-bottom  1px solid #e1e1e1
+	border-radius  0px
+	padding-left  0px
+	margin-left 0
+	.list
+		width 100%
+		border-radius 0
+	&:focus
+		border-color red
 .data-table
 	width 100%
 	thead
@@ -276,10 +298,23 @@ a
 				width auto
 				text-align left
 				padding 0px 20px
+				white-space nowrap
+				div[class*="icon"]
+					display none
+					position absolute
+					top 3px
+					right 0px
+	tr
+		border-bottom 1px solid grey
 	td
 		padding 20px
 	input[type="checkbox"]
 		margin-right 10px	
+	tbody
+		background white
+	.icon-close
+		font-size 8px
+	
 .table-avatar
 	width 25px
 	height 25px
@@ -293,3 +328,422 @@ a
 .col-flex
 	f()
 	fl()
+.table-progress
+	flex(between)
+	span 
+		margin-left 10px
+.table-progress-bar
+	width 100%
+	height 10px
+	background #e5e9ed
+	border-radius 3px
+	position relative
+.table-progress-val
+	position absolute
+	height 10px
+	background #00b8df
+	border-radius 3px 0 0 3px
+	top 0px
+	left 0px
+	width 5%
+	
+input[type="checkbox"]
+	display none
+
+
+input[type="checkbox"] + label span
+	display inline-block;
+	width 15px;
+	height 15px;
+	margin -1px 10px 0 0;
+	vertical-align middle;
+	background url(../img/chekbox.png) no-repeat;
+	cursor pointer;
+
+
+input[type="checkbox"]:checked + label span
+	background:url(../img/checkbox-check.png) no-repeat;
+	
+.select-simple
+	border 1px solid grey
+	border-radius 0px
+	height 32px
+	line-height 32px
+	padding-left 10px
+	.list
+		border-radius 0px
+		width 100%
+		li
+			text-align left
+			padding 0
+			width 100%
+			padding-left 10px
+	.focus
+		padding-right 0 !important
+	.option
+		line-height 30px
+		min-height 30px
+		
+.table-nav
+	flex(between)
+	padding 25px
+	background white
+.table-count
+	flex(mid)
+.table-page
+	flex(mid)
+.table-page-el
+	flex(mid)
+	cp()
+	round()
+	border 1px solid #cfe2e7
+	margin 0 5px
+	width 35px
+	height 35px
+	&:hover
+		color red
+		border 1px solid red
+
+.get-datapicker
+	position relative
+	
+.datepicker
+	margin-top 8px
+	border 0px !important
+	border-radius 0 !important
+	border-top 2px solid red!important
+	.day
+		color textcolor
+	.active
+		background none!important
+		color red!important
+		border 1px solid red!important
+		border-radius 50%
+		display block
+		width 28px
+		height 100%
+		line-height 17px
+.datepicker-dropdown.datepicker-orient-bottom:after,
+.datepicker-dropdown.datepicker-orient-bottom:before
+	display none
+
+.table-prior
+	position relative
+.table-prior-wraper
+	.row-flex
+		fw()
+		margin-bottom 10px
+		&:last-child
+			margin-bottom 0
+	position absolute
+	width 125px
+	background-color white
+	border 1px solid #e4f3f9
+	bsh()
+	padding 20px 10px
+	top 25px
+	left 0px
+	display none
+	border-top 2px solid red
+.data-table-title
+	position relative
+.data-table-title-change
+	display block
+	width 100%
+	position relative
+	padding-right 10px
+	cp()
+	div[class*="icon"]
+		display block!important
+	&:before
+		content ''
+		position absolute
+		bottom -10px
+		height 2px
+		background grey
+		width 100%
+.data-table-title-active
+	&:before
+		content ''
+		background red
+	div[class*="icon"]
+		color red
+	.icon-arrows
+		transform rotate(180deg)
+
+.range-slider
+	position absolute
+	bottom -270px
+	left 0px
+	background white
+	bsh()
+	width 120px
+	padding 30px 20px
+	z-index 2
+#rangeSlider
+	height 200px
+	
+.noUi-connect
+	background blue
+	
+.breadcrumbs
+	padding 20px
+	margin-bottom 50px
+	border-bottom 1px solid grey
+	a
+		margin-right 20px
+		position relative
+		color textcolor
+		
+		&:after
+			content '/'
+			position absolute
+			right -12px
+		&:last-child
+			color red
+			pointer-events none
+			&:after
+				content ''
+
+.main-button
+	border-radius 25px
+	margin 0 10px
+	border 1px solid blue
+	color blue
+	padding 14px 20px
+.main-button-dark
+	color white
+	background blue
+	
+.wraper-border
+	padding 20px
+	border 1px solid grey
+	border-top 0
+.top-tab-menu-near
+	margin-bottom 0
+	
+.wraper-white
+	background white
+	bsh()
+	margin-bottom 20px
+.title-toggle-hide
+	padding 25px 20px
+	div[class*="icon-"]
+		round()
+		cp()
+		padding 3px
+		color blue
+		margin-right 20px
+		border 1px solid blue
+.col-content
+	padding 20px
+	border-top 1px solid grey
+	margin-bottom 20px
+	.col
+		position relative
+	.icon-Information
+		position absolute
+		right 10px
+		bottom 20px
+		font-size 20px
+		color blue
+		cp()
+.input-row
+	span
+		display block
+		font-size 12px
+		color rgba(119, 127, 144, 0.5)
+	input
+		padding 5px 0px
+		width 100%
+		border 0px
+		border-bottom 1px solid grey
+		margin-top 5px
+		margin-bottom 10px
+		&:focus
+			border-bottom 1px solid red!important
+
+.infomation-block
+	position absolute
+	right -220px
+	top -150px
+	width 200px
+	background white
+	z-index 2
+	padding 20px
+	border 1px solid grey
+	display none
+.infomation-block-el
+	margin-bottom 20px
+	.type-mid
+		color #777f90
+		margin-bottom 5px
+.infomation-block-title
+	margin-bottom 20px
+	padding-bottom 10px
+	border-bottom 1px solid grey
+
+.infomation-block-wraper
+	position relative
+	&:before
+		content ''
+		width 20px
+		height 20px
+		border-bottom 1px solid #e1e1e1
+		border-left 1px solid #e1e1e1
+		position absolute
+		left -30px
+		top 165px
+		transform rotate(45deg)
+		background white
+
+.progress-think
+	.table-progress-val
+		height 4px
+	.table-progress-bar
+		height 4px
+
+.input-row-progress
+	input
+		margin-bottom  0px
+		border 0px
+
+.modal
+	display none
+	position relative
+	width 50%
+	min-width 800px
+.modal-wraper
+	background white
+.modal-close
+	position absolute
+	top 20px
+	right 20px
+	color blue
+	cp()
+//.icon-close
+.modal-head
+	padding 40px
+	background #f2f8fc
+.modal-title
+	margin-bottom 20px
+
+.modal-content
+	padding 30px 40px
+	border-top 1px solid grey
+	position relative
+	height 620px
+.property-cont
+	margin-top 10px
+	border 1px solid grey
+	padding 10px 0px
+	height 200px
+	overflow auto
+.property-el
+	padding 5px 20px
+	padding-right 0
+	flex(between)
+	&:hover
+		background #f8fcfd;
+		cp()
+		.property-icon
+			color blue
+			border 1px solid blue
+.property-icon
+	round()
+	color grey
+	width 16px
+	height 16px
+	border 1px solid grey
+	span
+		text-align center
+		display block
+		line-height 12px
+
+.modal-content-coner
+	position absolute
+	width 30px
+	height 30px
+	border-top 1px solid grey
+	border-left 1px solid grey
+	top -15px
+	left 0px
+	background white
+	transform rotate(45deg)
+	
+.modal-footer
+	position absolute
+	bottom 45px
+	left 45px
+	
+.close-block
+	position relative
+	.icon-close
+		position absolute
+		top 10px
+		right 10px
+		font-size 12px
+		cp()
+.block-tools-sort
+	margin-top 20px
+	height 250px
+	overflow auto
+	.wraper-block
+		margin-bottom 20px
+.block-tools-sort-wraper
+	border 1px solid grey
+	padding 10px
+	margin-top 10px
+
+.block-tools-filter
+	brd()
+	margin 20px 0
+.block-tools-filter-title
+	padding 10px 20px
+	background #edf7fb
+.block-tools-filter-el
+	padding 10px 30px
+	&:hover
+		cp()
+		color red
+		background #f8fcfd
+.filter-sub
+	position relative
+	cp()
+	&:before
+		content '\e911'
+		font-family 'icomoon' !important;
+		position absolute
+		left 15px
+		top 5px
+		transition all .4s
+		width 20px
+		height 20px
+		color textcolor
+		transform rotate(-90deg)
+	&:hover
+		cp()
+		color red
+.filter-sub-el
+	padding 5px 20px
+	color textcolor  !important
+	&:hover
+		cp()
+		color red !important
+		background #f8fcfd
+
+.filter-sub-wrap
+	display none
+	
+.filter-sub-active
+	&:before
+		content '\e911'
+		font-family 'icomoon' !important;
+		position absolute
+		top 10px
+		color red
+		transform rotate(0deg)
+		
+.scroll-overflow
+	height 250px
+	overflow auto

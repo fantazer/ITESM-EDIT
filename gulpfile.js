@@ -218,8 +218,11 @@ gulp.task('see',function(){
 gulp.task('img',['imagePng' , 'imageJpg']);
 gulp.task('default', ['serve','see']);
 //gulp.task('build',['copy:font','prefix','img','make','ftp']);
+//gulp.task('build',function(){
+//  runSequence('copy:font','prefix','img','make','ftp')
+//  });
 gulp.task('build',function(){
-  runSequence('copy:font','prefix','img','make','ftp')
+  runSequence('copy:font','prefix','img','make')
   });
 //gulp.task('build',['copy:font','prefix','img','make']);
 gulp.task('fast-build',['stylus','prefix','jade','copy:js','ftp']);

@@ -1,7 +1,347 @@
-<!DOCTYPE html>
-<html lang="en"></html>
-<head>
-  <meta charset="UTF-8"/>
-  <title>Document</title>
-</head>
-<body></body>
+
+<!--Include style--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
+  </head>
+</html>
+<body>
+  <!--Include header-->
+  <div class="header">
+    <div class="header-el-left"><a href="#" class="logo"><span>ITESM</span></a>
+      <div class="header-search">
+        <input type="h"/>
+        <div class="icon-Search"></div>
+      </div>
+    </div>
+    <div class="header-el-right">
+      <div class="header-icon"><a href="#" class="icon-notification"><span>4</span></a><a href="#" class="icon-message"></a></div>
+      <div class="header-prof">
+        <div class="header-prof-info">
+          <div class="type">Иванов Иван</div>
+          <div class="type-small">инженер отдела автоматизации</div>
+        </div>
+        <div class="header-prof-img"><img src="img/avatar.jpg" alt=""/></div>
+        <div class="header-prof-sub-wrap">
+          <div class="header-prof-sub"><a href="#" class="header-prof-sub-el"><i class="icon-EditPerfomance"></i><span class="type-mid">Редактировать профиль</span></a><a href="#" class="header-prof-sub-el"><i class="icon-exit"></i><span class="type-mid">Выйти из системы</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wraper">
+    <div class="left-col">
+      <ul>
+        <li><span>Мои страницы</span>
+          <ul class="left-col-sub">
+            <li class="left-col-active"><a href="#">Рабочее место</a></li>
+            <li><a href="#">Моя страница</a></li>
+            <li><a href="#">Каталог услуг</a></li>
+            <li><a href="#">Мои задачи</a></li>
+            <li><a href="#">База знаний</a></li>
+            <li><a href="#">Мои настройки</a></li>
+          </ul>
+        </li>
+        <li> <span>Управление инцидентами</span></li>
+        <li> <span>Управление запросами на обслуживание</span></li>
+        <li><span>Управление проблемами</span></li>
+        <li> <span>Управление изменениями</span></li>
+      </ul>
+    </div>
+    <div class="content-col">
+      <div class="breadcrumbs"><a href="#">Список инцидентов</a><a href="#">Инцидент SR0000000370</a></div>
+      <div class="row-flex top-row-button"><a href="#" class="main-button main-button-dark">Сохранить</a><a href="#" class="main-button">Отменить</a></div>
+      <div class="top-tab-menu top-tab-menu-near"><a href="#" class="top-tab-menu-active">Параметры</a><a href="#">Связи</a><a href="#">Учет времение</a><a href="#">Журнал событий</a><a href="#">Журнал изменений</a></div>
+      <div class="wraper-border">
+        <div class="grid">
+          <div class="row">
+            <!--left-partr-->
+            <div class="col col--md-6">
+              <div class="wraper-white">
+                <!--Title col-->
+                <div class="title-toggle-hide">
+                  <div class="row-flex">
+                    <div class="icon-arrows"></div>
+                    <div class="type">Основные параметры</div>
+                  </div>
+                </div>
+                <!--Content-->
+                <div class="col-content">
+                  <div class="row">
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Номер</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Статус</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-12">
+                        <div class="input-row"><span>Пользователь</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                      <div class="icon-Information"></div>
+                      <!--Information window-->
+                      <div class="infomation-block">
+                        <div class="infomation-block-wraper">
+                          <div class="infomation-block-title">
+                            <div class="type">Иванов Иван Иванович</div>
+                          </div>
+                          <div class="infomation-block-el">
+                            <div class="type-mid">Подразделение</div>
+                            <div class="type">ЗАО «ИТ Эксперт»</div>
+                          </div>
+                          <div class="infomation-block-el">
+                            <div class="type-mid">Местоположение</div>
+                            <div class="type">Офис «ИТ Эксперт» (Каланчевская 15)</div>
+                          </div>
+                          <div class="infomation-block-el">
+                            <div class="type-mid">Должность</div>
+                            <div class="type">Старший консультант</div>
+                          </div>
+                          <div class="infomation-block-el">
+                            <div class="type-mid">Логин AD</div>
+                            <div class="type">Логин</div>
+                          </div>
+                          <div class="infomation-block-el">
+                            <div class="type-mid">E-mail</div>
+                            <div class="type">i.ivanov@itexpert.ru</div>
+                          </div>
+                          <div class="infomation-block-el">
+                            <div class="type-mid">Телефон</div>
+                            <div class="type">8 911 565 56 56</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col--md-12">
+                        <div class="input-row"><span>Где искать</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Услуга</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Приоритет</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Степень вовлеченности</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Степень влияния</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Ответсвенная группа</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Ответственный сотрудник</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                      <div class="icon-Information"></div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Способы обращения</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Тип</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-12">
+                        <div class="input-row"><span>Тема</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-12">
+                        <div class="input-row"><span>Описание</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--right-part-->
+            <div class="col col--md-6">
+              <!--El-->
+              <div class="wraper-white">
+                <div class="title-toggle-hide">
+                  <div class="row-flex">
+                    <div class="icon-arrows"></div>
+                    <div class="type">Временные характеристики</div>
+                  </div>
+                </div>
+                <!--Content-->
+                <div class="col-content">
+                  <div class="row">
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>Дата создания</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                      <div class="input-row input-row-progress"><span>Плановая дата решения</span>
+                        <input type="text" placeholder="Default value" class="get-datapicker"/>
+                      </div>
+                      <div class="table-progress progress-think">
+                        <div class="table-progress-bar">
+                          <div data-progress="45" class="table-progress-val"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>SLA</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                      <div class="input-row input-row-progress"><span>Регламентская дата решения</span>
+                        <input type="text" placeholder="Default value" class="get-datapicker"/>
+                      </div>
+                      <div class="table-progress progress-think">
+                        <div class="table-progress-bar">
+                          <div data-progress="45" class="table-progress-val"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>SLA</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>SLA</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                    <div class="col col--md-6">
+                        <div class="input-row"><span>SLA</span>
+                          <input type="text" placeholder="Default value"/>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--El-->
+              <div class="wraper-white">
+                <div class="title-toggle-hide">
+                  <div class="row-flex">
+                    <div class="icon-arrows"></div>
+                    <div class="type">Задачи и согласования</div>
+                  </div>
+                </div>
+              </div>
+              <!--El-->
+              <div class="wraper-white">
+                <div class="title-toggle-hide">
+                  <div class="row-flex">
+                    <div class="icon-arrows"></div>
+                    <div class="type">Диагностика и решение</div>
+                  </div>
+                </div>
+              </div>
+              <!--El-->
+              <div class="wraper-white">
+                <div class="title-toggle-hide">
+                  <div class="row-flex">
+                    <div class="icon-arrows"></div>
+                    <div class="type">Файлы</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Table-->
+        <div class="top-tab-menu top-tab-menu-near"><a href="#" class="top-tab-menu-active">Параметры</a><a href="#">Связи</a><a href="#">Учет времение</a><a href="#">Журнал событий</a><a href="#">Журнал изменений</a></div>
+        <div class="wraper-border">
+          <div class="table-nav">
+            <div class="table-count">
+              <div class="row-flex">
+                <div class="type">Колличество строк</div>
+                <select class="select select-simple">
+                  <option value="1">10</option>
+                  <option value="1">20</option>
+                  <option value="1">30</option>
+                </select>
+              </div>
+            </div>
+            <div class="table-page">
+              <div class="table-page-el"><span>1 </span></div>
+              <div class="table-page-el"><span>2 </span></div>
+              <div class="table-page-el"><span>3 </span></div>
+              <div class="table-page-el"><span>4 </span></div>
+              <div class="table-page-el"><span>5 </span></div>
+            </div>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>
+                  <div class="row-flex"><span class="data-table-title">№</span></div>
+                </th>
+                <th><span class="data-table-title">Название
+                    <div class="icon-arrows"></div></span></th>
+                <th><span class="data-table-title">Описание</span></th>
+                <th><span class="data-table-title">Дата и время</span></th>
+                <th><span class="data-table-title">Автор</span></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tr>
+              <td><span>1</span></td>
+              <td><a href="#">SR0000000370</a></td>
+              <td><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis quae voluptatem, aut, delectus illum eaque, repudiandae autem doloremque expedita sit minus enim totam eligendi. Voluptatem nulla, nihil reiciendis magni!</span></td>
+              <td><span>10.12.2015</span></td>
+              <td><span>Федоров Андрей Владимирович</span></td>
+            </tr>
+            <tr>
+              <td><span>2</span></td>
+              <td><a href="#">SR0000000370</a></td>
+              <td><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis quae voluptatem, aut, delectus illum eaque, repudiandae autem doloremque expedita sit minus enim totam eligendi. Voluptatem nulla, nihil reiciendis magni!</span></td>
+              <td><span>10.12.2015</span></td>
+              <td><span>Федоров Андрей Владимирович</span></td>
+            </tr>
+            <tr>
+              <td><span>3</span></td>
+              <td><a href="#">SR0000000370</a></td>
+              <td><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis quae voluptatem, aut, delectus illum eaque, repudiandae autem doloremque expedita sit minus enim totam eligendi. Voluptatem nulla, nihil reiciendis magni!</span></td>
+              <td><span>10.12.2015</span></td>
+              <td><span>Федоров Андрей Владимирович</span></td>
+            </tr>
+            <tr>
+              <td><span>4</span></td>
+              <td><a href="#">SR0000000370</a></td>
+              <td><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis quae voluptatem, aut, delectus illum eaque, repudiandae autem doloremque expedita sit minus enim totam eligendi. Voluptatem nulla, nihil reiciendis magni!</span></td>
+              <td><span>10.12.2015</span></td>
+              <td><span>Федоров Андрей Владимирович</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--Include footer-->
+<script src="js/combined.js"></script>
+<script src="js/script.js"></script>

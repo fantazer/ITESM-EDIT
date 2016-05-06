@@ -1,140 +1,262 @@
 //Include style
 include ./block_html/style.jade
 body
+
+	include ./block_html/elements/const.jade
+	
 	//Include header
 	include ./block_html/header.jade
-	include ./block_html/elements/const.jade
+	.wraper
+		include ./block_html/left-menu.jade
+		.content-col
+			.top-tab-menu
+				a(href="#").top-tab-menu-active Агрегация
+				a(href="#") Инциденты
+				a(href="#") Запросы на обслуживание
+				a(href="#") Запросы на изменениер
+				a(href="#") Задачи
+				a(href="#") Согласования
+			.row-flex.top-row-button
+				.icon-btn.icon-btn-active.icon-Add2.get-modal
+				.icon-btn.icon-Edit.get-modal
+				.icon-btn.icon-Delete
+				.icon-btn.icon-Filter
+				.icon-btn.icon-panel
+				select.select.select-dark
+					option(value="1") Выгрузить
+					option(value="1") Добавить
+					option(value="1") Изменить
 
-.header
-	.header-el-left
-		a(href="#").logo
-			span ITESM
-		.header-search
-			input(type="h")
-			.icon-Search
-	.header-el-right
-		.header-icon
-			a(href="#").icon-notification
-				span 4
-			a(href="#").icon-message
-		.header-prof
-			.header-prof-info
-					.type Иванов Иван
-					.type-small инженер отдела автоматизации
-			.header-prof-img
-					img(src="img/avatar.jpg", alt="")
-			.header-prof-sub-wrap
-				.header-prof-sub
-					a(href="#").header-prof-sub-el
-						i.icon-EditPerfomance
-						span.type-mid Редактировать профиль
-					a(href="#").header-prof-sub-el
-						i.icon-exit
-						span.type-mid Выйти из системы
+				select.select
+					option(value="1") Групповое действие
+					option(value="1") Удалить все
+					option(value="1") Внести изменения
+			//Table
+			.table-nav
+				.table-count
+					.row-flex
+						.type Колличество строк
+						select.select.select-simple
+							option(value="1") 10
+							option(value="1") 20
+							option(value="1") 30
+				.table-page
+					- for (var a = 0; a < 5; a++)
+						.table-page-el
+							span #{a+1} 
+			table.data-table
+				thead
+					tr
+						th
+							div.row-flex
+								+input('Table-head')
+								span.data-table-title Событие
+									.icon-close
+						th 
+							span.data-table-title Статус
+								.icon-arrows
+						th 
+							span.data-table-title.table-prior Приоритет
+								.icon-arrows
+								.table-prior-wraper
+									- for (var b = 0; b < 4; b++)
+										.row-flex
+											input(id='b#{b}', type='checkbox', name='rr')
+											label(for='b#{b}') 
+												span
+											text Средний
+						th 
+							span.data-table-title Пользователь
+								.icon-close
+						th 
+							span.data-table-title Ответственный
+								.icon-close
+						th 
+							span.data-table-title.get-datapicker Дата создания
+						th 
+							span.data-table-title.get-datapicker Дата решения
+						th 
+							span.data-table-title.get-rangeslider Потраченное время
+								.icon-arrows
+								.range-slider.hidden
+									#rangeSlider
+				tbody
+				- for (var c = 0; c < 8; c++)
+					tr
+						td.row-flex
+							input(id='c#{c}', type='checkbox', name='rr')
+							label(for='c#{c}') 
+								span
+							.col-flex
+								span У меня что-то сломалось. 
+								a(href="#") SR0000000370
+						td
+							span Запрос информации
+						td
+							span.green-text Нормальный
+						td
+							span Федоров Андрей Владимирович
+						td
+							.row-flex
+								.table-avatar
+									img(src="img/avatar.jpg", alt="")
+								.table-avatar-info
+									a(href="#") Иванов Иван
+									.type-small Администрирование сети
+						td
+							span 05.02.2016 12:53
+						td
+							span 08.02.2016 09:53
+						td
+							.table-progress
+								.table-progress-bar
+									.table-progress-val(data-progress='45')
+								span 45%
 
-.wraper
-	.left-col
-		ul
-			li
-				span Мои страницы
-				ul.left-col-sub
-					li.left-col-active
-						a(href="#") Рабочее место
-					li
-						a(href="#") Моя страница
-					li
-						a(href="#") Каталог услуг
-					li
-						a(href="#") Мои задачи
-					li
-						a(href="#") База знаний
-					li
-						a(href="#") Мои настройки
-			li 
-				span Управление инцидентами
-			li 
-				span Управление запросами на обслуживание
-			li
-				span Управление проблемами
-			li 
-				span Управление изменениями
+	//M
+	.modal
+		.modal-wraper
+			.modal-close
+				.icon-close
+			.modal-head
+				.type.modal-title Режим создания представления
+				.row-flex
+					.icon-btn.icon-GeneralSettings.icon-btn-active(data-modalicon='one')
+					.icon-btn.icon-Filter(data-modalicon='two')
+					.icon-btn.icon-Sorting(data-modalicon='three')
+					.icon-btn.icon-Format(data-modalicon='four')
+					.icon-btn.icon-circle(data-modalicon='')
+					select.select.select-dark
+						option(value="1") Сохранить
+						option(value="1") Добавить
+						option(value="1") Изменить
+					select.select
+						option(value="1") Сохранить как
+						option(value="1") Удалить все
+						option(value="1") Внести изменения
+			
+			//Modal one
+			.modal-content(data-modalcontetn='one')
+				.modal-content-coner
+				.type.modal-title Общие настройки представления:
+				.col-modal
+					.row
+						.col.col--md-6
+							+inputRow('Наименование представления','Default value')
+						.col.col--md-6
+					.row
+						.col.col--md-6
+							.type Список доступных свойств:
+							.property-cont.scroll
+								- for (var d = 0; d < 8; d++)
+									.property-el
+										.property-name Услуга
+										.property-icon
+											span +
+						.col.col--md-6
+							.type Список свойств для удаления:
+								.property-cont.scroll
+									- for (var e = 0; e < 8; e++)
+										.property-el
+											.property-name Услугa
+											.property-icon
+												span -
+				.row-flex.modal-footer
+					a(href="#").main-button.main-button-dark Сохранить и продолжить
+					a(href="#").main-button Сбросить все
+			
+			//Modal two
+			.modal-content.hidden(data-modalcontetn='two')
+				.modal-content-coner
+				.type.modal-title Общие настройки представления:
+				.col-modal
+					.row
+						.col.col--md-6
+							+inputRow('Наименование представления','Default value')
+						.col.col--md-6
+					.row
+						.col.col--md-6
+							.type Список доступных свойств:
+							.property-cont
+								- for (var d = 0; d < 8; d++)
+									.property-el
+										.property-name Услуга
+										.property-icon
+											span +
+						.col.col--md-6
+								.property-cont
+									- for (var e = 0; e < 8; e++)
+										.property-el
+											.property-name Услуга
+											.property-icon
+												span -
+				.row-flex.modal-footer
+					a(href="#").main-button.main-button-dark Сохранить
+					a(href="#").main-button Отменить
 
-	.content-col
-		.top-tab-menu
-			a(href="#").top-tab-menu-active Агрегация
-			a(href="#") Инциденты
-			a(href="#") Запросы на обслуживание
-			a(href="#") Запросы на изменениер
-			a(href="#") Задачи
-			a(href="#") Согласования
-		.row-flex.top-row-button
-			a(href="#").icon-btn.icon-btn-active.icon-Add2
-			a(href="#").icon-btn.icon-Edit
-			a(href="#").icon-btn.icon-Delete
-			a(href="#").icon-btn.icon-Filter
-			a(href="#").icon-btn.icon-panel
-			select.select.select-dark
-				option(value="1") Выгрузить
-				option(value="1") Добавить
-				option(value="1") Изменить
+			//Modal three
+			.modal-content.hidden(data-modalcontetn='three')
+				.modal-content-coner
+				.type.modal-title Настройка сортировки:
+				.row-flex
+					a(href="#").main-button + Добавить уровень
+				.col-modal
+					.row
+						.col.col--md-8
+							.block-tools-sort.scroll
+								- for (var f = 0; f < 8; f++)
+									.wraper-block
+										.type Уровень 1
+										.block-tools-sort-wraper.close-block
+											.icon-close
+											.row
+												.col.col--md-6
+													+inputSelect('Свойство','Default value')
+												.col.col--md-6
+													+inputSelect('Свойство','Default value')
 
-			select.select
-				option(value="1") Групповое действие
-				option(value="1") Удалить все
-				option(value="1") Внести изменения
+				.row-flex.modal-footer
+					a(href="#").main-button.main-button-dark Сохранить и продолжить
+					a(href="#").main-button Сбросить все
 
-		//Table
-		table.data-table
-			thead
-				tr
-					th
-						input(type="checkbox")
-						span Событие
-					th 
-						span Статус
-					th 
-						span Приоритет
-					th 
-						span Пользователь
-					th 
-						span Ответственный
-					th 
-						span Дата создания
-					th 
-						span Дата решения
-					th 
-						span Потраченное время
-			tbody
-			- for (var a = 0; a < 8; a++)
-				tr
-					td.row-flex
-						input(type="checkbox")
-						.col-flex
-							span У меня что-то сломалось.
-							a(href="#") SR0000000370
-					td
-						span Запрос информации
-					td
-						span Нормальный
-					td
-						span Федоров Андрей Владимирович
-					td
-						.row-flex
-							.table-avatar
-								img(src="img/avatar.jpg", alt="")
-							.table-avatar-info
-								a(href="#") Иванов Иван
-								.type-small Администрирование сети
-					td
-						span 05.02.2016 12:53
-					td
-						span 08.02.2016 09:53
-					td
-						.table-progress
-							.table-progress-bar(data-pogress='45')
-							.table-progress-val 45%
+			//Modal four
+			.modal-content.hidden(data-modalcontetn='four')
+				.modal-content-coner
+				.type.modal-title Настройка Фильтрации:
+				.col-modal
+					.row
+						.col.col--md-8
+							.row
+								.col.col--md-8
+									+inputRow('Свойство','Default value')
+							.type Установка значения
+							.block-tools-filter.scroll.scroll-overflow
+								.block-tools-filter-title Установка значения по реквизиту
+								.block-tools-filter-el Текущая дата
+								.block-tools-filter-el.filter-sub Текущая дата
+									.filter-sub-wrap
+										.filter-sub-el дата 
+										.filter-sub-el дата 
+										.filter-sub-el дата 
+										.filter-sub-el дата
+								- for (var j = 0; j < 8; j++)
+									.block-tools-filter-el Текущая дата
+							.row-flex
+								select.select.select-light
+									option(value="1") +
+									option(value="1") -
+								select.select.select-light
+									option(value="1") 1
+									option(value="1") 2
+									option(value="1") 3
+								select.select.select-light
+									option(value="1") минута
+									option(value="1") секунда
+									option(value="1") час
+				.row-flex.modal-footer
+					a(href="#").main-button.main-button-dark Сохранить и продолжить
+					a(href="#").main-button Сбросить все 
 
-					
 //Include footer
 include ./block_html/script.jade
 
