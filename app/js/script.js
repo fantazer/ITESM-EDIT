@@ -130,7 +130,7 @@ $(document).ready(function(){
 	// Change postion coner
 		var posConer = 0
 		$('.modal-content-coner').each(function(){
-			posConer = posConer +58
+			posConer = posConer +59
 			$(this).css('left', posConer+'px')
 		})
 

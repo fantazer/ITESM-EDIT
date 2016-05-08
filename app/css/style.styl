@@ -514,7 +514,8 @@ input[type="checkbox"]:checked + label span
 .main-button-dark
 	color white
 	background blue
-	
+.small-button
+	padding 8px 20px
 .wraper-border
 	padding 20px
 	border 1px solid grey
@@ -746,4 +747,63 @@ input[type="checkbox"]:checked + label span
 		
 .scroll-overflow
 	height 250px
+	overflow auto
+
+.checkbox-row
+	margin-bottom 10px
+	
+.icon-circle
+	font-size 22px
+	
+.filter-tool-el
+	flex(between)
+	width 100%
+	padding-left 10px
+	margin-bottom 5px
+	.input-row
+		width 100%
+		position relative
+		input
+			margin 0
+			padding 12px 0
+		div[class*='icon-']
+			cp()
+			position absolute
+			right 0px
+			top 5px
+			font-size 36px
+			color blue
+	.icon-close
+		top 15px
+		right -35px
+.filter-tool
+	margin-left 25px
+	position relative
+	margin-top 20px
+	.icon-arrows
+		round()
+		cp()
+		border 1px solid red
+		color red
+		padding 3px
+		text-align center
+		line-height 12px
+	&:before
+		content ''
+		position absolute
+		width 1px
+		height calc(100% - 45px)
+		background red
+		left -5px
+		top 45px
+.filter-tool-arrow
+	position absolute
+	left -15px
+	top 25px
+	
+.filter-tool-head
+	margin-bottom 10px
+	
+.filter-tool-wraper
+	height 350px
 	overflow auto

@@ -384,7 +384,7 @@
           <div data-modalicon="two" class="icon-btn icon-Filter"></div>
           <div data-modalicon="three" class="icon-btn icon-Sorting"></div>
           <div data-modalicon="four" class="icon-btn icon-Format"></div>
-          <div data-modalicon="" class="icon-btn icon-circle"></div>
+          <div data-modalicon="five" class="icon-btn icon-circle"></div>
           <select class="select select-dark">
             <option value="1">Сохранить</option>
             <option value="1">Добавить</option>
@@ -493,87 +493,147 @@
       <!--Modal two-->
       <div data-modalcontetn="two" class="modal-content hidden">
         <div class="modal-content-coner"></div>
-        <div class="type modal-title">Общие настройки представления:</div>
+        <div class="type modal-title">Настройка фильтрации:</div>
+        <div class="row-flex"><a href="#" class="main-button">+ Добавить группу</a></div>
         <div class="col-modal">
-          <div class="row">
-            <div class="col col--md-6">
-                <div class="input-row"><span>Наименование представления</span>
-                  <input type="text" placeholder="Default value"/>
+          <div class="filter-tool-wraper scroll">
+            <div class="row">
+              <div class="filter-tool col col--md-8">
+                <div class="filter-tool-arrow">
+                  <div class="icon-arrows"></div>
                 </div>
-            </div>
-            <div class="col col--md-6"></div>
-          </div>
-          <div class="row">
-            <div class="col col--md-6">
-              <div class="type">Список доступных свойств:</div>
-              <div class="property-cont">
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
+                <div class="filter-tool-head">
+                  <div class="row-flex">
+                    <select class="select select-simple">
+                      <option value="1">или</option>
+                      <option value="1">и</option>
+                      <option value="1">инача</option>
+                    </select>
+                    <div class="type">Группа 1</div><a href="#" class="main-button small-button">+ Свойство</a><a href="#" class="main-button small-button">+ Группу</a>
+                  </div>
                 </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
+                <div class="filter-tool-content">
+                  <div class="filter-tool-el close-block">
+                    <div class="icon-close"></div>
+                    <select class="select select-light">
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                    </select>
+                    <select class="select select-light">
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                    </select>
+                    <div class="input-row">
+                      <input type="text" placeholder="Значение"/>
+                      <div class="icon-cogwheel"></div>
+                    </div>
+                  </div>
+                  <div class="filter-tool-el close-block">
+                    <div class="icon-close"></div>
+                    <select class="select select-light">
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                    </select>
+                    <select class="select select-light">
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                    </select>
+                    <div class="input-row">
+                      <input type="text" placeholder="Значение"/>
+                      <div class="icon-cogwheel"></div>
+                    </div>
+                  </div>
+                  <div class="filter-tool-el close-block">
+                    <div class="icon-close"></div>
+                    <select class="select select-light">
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                    </select>
+                    <select class="select select-light">
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                      <option value="1">Свойтсво</option>
+                    </select>
+                    <div class="input-row">
+                      <input type="text" placeholder="Значение"/>
+                      <div class="icon-cogwheel"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>+</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col col--md-6">
-              <div class="property-cont">
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
-                </div>
-                <div class="property-el">
-                  <div class="property-name">Услуга</div>
-                  <div class="property-icon"><span>-</span></div>
+                <div class="row">
+                  <div class="filter-tool col col--md-12">
+                    <div class="filter-tool-arrow">
+                      <div class="icon-arrows"></div>
+                    </div>
+                    <div class="filter-tool-head">
+                      <div class="row-flex">
+                        <select class="select select-simple">
+                          <option value="1">или</option>
+                          <option value="1">и</option>
+                          <option value="1">инача</option>
+                        </select>
+                        <div class="type">Группа 1</div><a href="#" class="main-button small-button">+ Свойство</a><a href="#" class="main-button small-button">+ Группу</a>
+                      </div>
+                    </div>
+                    <div class="filter-tool-content">
+                      <div class="filter-tool-el close-block">
+                        <div class="icon-close"></div>
+                        <select class="select select-light">
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                        </select>
+                        <select class="select select-light">
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                        </select>
+                        <div class="input-row">
+                          <input type="text" placeholder="Значение"/>
+                          <div class="icon-cogwheel"></div>
+                        </div>
+                      </div>
+                      <div class="filter-tool-el close-block">
+                        <div class="icon-close"></div>
+                        <select class="select select-light">
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                        </select>
+                        <select class="select select-light">
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                        </select>
+                        <div class="input-row">
+                          <input type="text" placeholder="Значение"/>
+                          <div class="icon-cogwheel"></div>
+                        </div>
+                      </div>
+                      <div class="filter-tool-el close-block">
+                        <div class="icon-close"></div>
+                        <select class="select select-light">
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                        </select>
+                        <select class="select select-light">
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                          <option value="1">Свойтсво</option>
+                        </select>
+                        <div class="input-row">
+                          <input type="text" placeholder="Значение"/>
+                          <div class="icon-cogwheel"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -859,6 +919,116 @@
           </div>
         </div>
         <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить и продолжить</a><a href="#" class="main-button">Сбросить все </a></div>
+      </div>
+      <!--Modal five-->
+      <div data-modalcontetn="five" class="modal-content hidden">
+        <div class="modal-content-coner"></div>
+        <div class="type modal-title">Настройки прав доступа</div>
+        <div class="col-modal">
+          <div class="row">
+            <div class="col col--md-6">
+              <div class="type-mid">Доступ на чтение</div>
+              <div class="row-flex"></div>
+                <div class="row-flex checkbox-row">
+                  <input id="bc1" type="checkbox" name="rr"/>
+                  <label for="bc1"> <span></span></label>
+                  <text>Доступно всем</text>
+                </div>
+                <div class="input-row"><span>Разрешить доступ пользователям:</span>
+                  <input type="text" placeholder="Начните вводить имя"/>
+                </div>
+            </div>
+            <div class="col col--md-6">
+              <div class="type-mid">Доступ на чтение</div>
+                <div class="row-flex checkbox-row">
+                  <input id="bc2" type="checkbox" name="rr"/>
+                  <label for="bc2"> <span></span></label>
+                  <text>Доступно всем</text>
+                </div>
+                <div class="input-row"><span>Разрешить доступ пользователям:</span>
+                  <input type="text" placeholder="Начните вводить имя"/>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col--md-6">
+              <div class="type">Список пользователей с доступом:</div>
+              <div class="property-cont scroll">
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+                <div class="property-el">
+                  <div class="property-name">Попов Иван Иванович</div>
+                  <div class="property-icon"><span>+</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--md-6">
+              <div class="type">Список пользователей с доступом:
+                <div class="property-cont scroll">
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                  <div class="property-el">
+                    <div class="property-name">Попов Иван Иванович</div>
+                    <div class="property-icon"><span>-</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить и продолжить</a><a href="#" class="main-button">Сбросить все</a></div>
       </div>
     </div>
   </div>

@@ -125,7 +125,7 @@ body
 					.icon-btn.icon-Filter(data-modalicon='two')
 					.icon-btn.icon-Sorting(data-modalicon='three')
 					.icon-btn.icon-Format(data-modalicon='four')
-					.icon-btn.icon-circle(data-modalicon='')
+					.icon-btn.icon-circle(data-modalicon='five')
 					select.select.select-dark
 						option(value="1") Сохранить
 						option(value="1") Добавить
@@ -168,28 +168,67 @@ body
 			//Modal two
 			.modal-content.hidden(data-modalcontetn='two')
 				.modal-content-coner
-				.type.modal-title Общие настройки представления:
+				.type.modal-title Настройка фильтрации:
+				.row-flex
+					a(href="#").main-button + Добавить группу
 				.col-modal
-					.row
-						.col.col--md-6
-							+inputRow('Наименование представления','Default value')
-						.col.col--md-6
-					.row
-						.col.col--md-6
-							.type Список доступных свойств:
-							.property-cont
-								- for (var d = 0; d < 8; d++)
-									.property-el
-										.property-name Услуга
-										.property-icon
-											span +
-						.col.col--md-6
-								.property-cont
-									- for (var e = 0; e < 8; e++)
-										.property-el
-											.property-name Услуга
-											.property-icon
-												span -
+					.filter-tool-wraper.scroll
+						.row
+							.filter-tool.col.col--md-8
+								.filter-tool-arrow
+									.icon-arrows
+								.filter-tool-head
+									.row-flex
+										select.select.select-simple
+											option(value="1") или
+											option(value="1") и
+											option(value="1") инача
+										.type Группа 1
+										a(href="#").main-button.small-button + Свойство
+										a(href="#").main-button.small-button + Группу
+								.filter-tool-content
+									- for (var k = 0; k < 3; k++)
+										.filter-tool-el.close-block
+											.icon-close
+											select.select.select-light
+												option(value="1") Свойтсво
+												option(value="1") Свойтсво
+												option(value="1") Свойтсво
+											select.select.select-light
+												option(value="1") Свойтсво
+												option(value="1") Свойтсво
+												option(value="1") Свойтсво
+											.input-row
+												input(type="text", placeholder="Значение")
+												.icon-cogwheel
+								.row
+									.filter-tool.col.col--md-12
+										.filter-tool-arrow
+											.icon-arrows
+										.filter-tool-head
+											.row-flex
+												select.select.select-simple
+													option(value="1") или
+													option(value="1") и
+													option(value="1") инача
+												.type Группа 1
+												a(href="#").main-button.small-button + Свойство
+												a(href="#").main-button.small-button + Группу
+										.filter-tool-content
+											- for (var k = 0; k < 3; k++)
+												.filter-tool-el.close-block
+													.icon-close
+													select.select.select-light
+														option(value="1") Свойтсво
+														option(value="1") Свойтсво
+														option(value="1") Свойтсво
+													select.select.select-light
+														option(value="1") Свойтсво
+														option(value="1") Свойтсво
+														option(value="1") Свойтсво
+													.input-row
+														input(type="text", placeholder="Значение")
+														.icon-cogwheel
 				.row-flex.modal-footer
 					a(href="#").main-button.main-button-dark Сохранить
 					a(href="#").main-button Отменить
@@ -256,7 +295,42 @@ body
 				.row-flex.modal-footer
 					a(href="#").main-button.main-button-dark Сохранить и продолжить
 					a(href="#").main-button Сбросить все 
-
+			
+			//Modal five
+			.modal-content.hidden(data-modalcontetn='five')
+				.modal-content-coner
+				.type.modal-title Настройки прав доступа
+				.col-modal
+					.row
+						.col.col--md-6
+							.type-mid Доступ на чтение
+							.row-flex
+							+checkboxRow('c1','Доступно всем')
+							+inputRow('Разрешить доступ пользователям:','Начните вводить имя')
+						.col.col--md-6
+							.type-mid Доступ на чтение
+							+checkboxRow('c2','Доступно всем')
+							+inputRow('Разрешить доступ пользователям:','Начните вводить имя')
+					.row
+						.col.col--md-6
+							.type Список пользователей с доступом:
+							.property-cont.scroll
+								- for (var d = 0; d < 8; d++)
+									.property-el
+										.property-name Попов Иван Иванович
+										.property-icon
+											span +
+						.col.col--md-6
+							.type Список пользователей с доступом:
+								.property-cont.scroll
+									- for (var e = 0; e < 8; e++)
+										.property-el
+											.property-name Попов Иван Иванович
+											.property-icon
+												span -
+				.row-flex.modal-footer
+					a(href="#").main-button.main-button-dark Сохранить и продолжить
+					a(href="#").main-button Сбросить все
 //Include footer
 include ./block_html/script.jade
 
