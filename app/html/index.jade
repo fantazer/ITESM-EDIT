@@ -41,9 +41,15 @@ body
 							option(value="1") 20
 							option(value="1") 30
 				.table-page
+					.table-page-el
+						span
+							.icon-Back
 					- for (var a = 0; a < 5; a++)
 						.table-page-el
 							span #{a+1} 
+					.table-page-el
+						span
+							.icon-Next
 			table.data-table
 				thead
 					tr
