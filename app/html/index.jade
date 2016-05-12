@@ -22,12 +22,12 @@ body
 				.icon-btn.icon-Delete
 				.icon-btn.icon-Filter
 				.icon-btn.icon-panel
-				select.select.select-dark
+				select.select.select-dark.select-big
 					option(value="1") Выгрузить
 					option(value="1") Добавить
 					option(value="1") Изменить
 
-				select.select
+				select.select.select-big
 					option(value="1") Групповое действие
 					option(value="1") Удалить все
 					option(value="1") Внести изменения
@@ -132,11 +132,12 @@ body
 					.icon-btn.icon-Sorting(data-modalicon='three')
 					.icon-btn.icon-Format(data-modalicon='four')
 					.icon-btn.icon-circle(data-modalicon='five')
-					select.select.select-dark
+					.icon-btn.icon-circle(data-modalicon='six')
+					select.select.select-dark.select-big
 						option(value="1") Сохранить
 						option(value="1") Добавить
 						option(value="1") Изменить
-					select.select
+					select.select.select-big
 						option(value="1") Сохранить как
 						option(value="1") Удалить все
 						option(value="1") Внести изменения
@@ -174,67 +175,72 @@ body
 			//Modal two
 			.modal-content.hidden(data-modalcontetn='two')
 				.modal-content-coner
-				.type.modal-title Настройка фильтрации:
-				.row-flex
-					a(href="#").main-button + Добавить группу
-				.col-modal
-					.filter-tool-wraper.scroll
-						.row
-							.filter-tool.col.col--md-8
-								.filter-tool-arrow
-									.icon-arrows
-								.filter-tool-head
-									.row-flex
-										select.select.select-simple
-											option(value="1") или
-											option(value="1") и
-											option(value="1") инача
-										.type Группа 1
-										a(href="#").main-button.small-button + Свойство
-										a(href="#").main-button.small-button + Группу
-								.filter-tool-content
-									- for (var k = 0; k < 3; k++)
-										.filter-tool-el.close-block
-											.icon-close
-											select.select.select-light
-												option(value="1") Свойтсво
-												option(value="1") Свойтсво
-												option(value="1") Свойтсво
-											select.select.select-light
-												option(value="1") Свойтсво
-												option(value="1") Свойтсво
-												option(value="1") Свойтсво
-											.input-row
-												input(type="text", placeholder="Значение")
-												.icon-cogwheel
-								.row
-									.filter-tool.col.col--md-12
-										.filter-tool-arrow
-											.icon-arrows
-										.filter-tool-head
-											.row-flex
-												select.select.select-simple
-													option(value="1") или
-													option(value="1") и
-													option(value="1") инача
-												.type Группа 1
-												a(href="#").main-button.small-button + Свойство
-												a(href="#").main-button.small-button + Группу
-										.filter-tool-content
-											- for (var k = 0; k < 3; k++)
-												.filter-tool-el.close-block
-													.icon-close
-													select.select.select-light
-														option(value="1") Свойтсво
-														option(value="1") Свойтсво
-														option(value="1") Свойтсво
-													select.select.select-light
-														option(value="1") Свойтсво
-														option(value="1") Свойтсво
-														option(value="1") Свойтсво
-													.input-row
-														input(type="text", placeholder="Значение")
-														.icon-cogwheel
+				.breadcrumbs.breadcrumbs-modal
+					a(href="#")
+						.icon-arrows
+					a(href="#") Список инцидентов
+					a(href="#") Инцидент SR0000000370
+				.wraper-scroll.scroll
+					.row-flex
+						a(href="#").main-button + Добавить группу
+					.col-modal
+						.filter-tool-wraper
+							.row
+								.filter-tool.col.col--md-8
+									.filter-tool-arrow
+										.icon-arrows
+									.filter-tool-head
+										.row-flex
+											select.select.select-simple
+												option(value="1") или
+												option(value="1") и
+												option(value="1") инача
+											.type Группа 1
+											a(href="#").main-button.small-button + Свойство
+											a(href="#").main-button.small-button + Группу
+									.filter-tool-content
+										- for (var k = 0; k < 3; k++)
+											.filter-tool-el.close-block
+												.icon-close
+												select.select.select-light
+													option(value="1") Свойтсво
+													option(value="1") Свойтсво
+													option(value="1") Свойтсво
+												select.select.select-light
+													option(value="1") Свойтсво
+													option(value="1") Свойтсво
+													option(value="1") Свойтсво
+												.input-row
+													input(type="text", placeholder="Значение")
+													.icon-cogwheel
+									.row
+										.filter-tool.col.col--md-12
+											.filter-tool-arrow
+												.icon-arrows
+											.filter-tool-head
+												.row-flex
+													select.select.select-simple
+														option(value="1") или
+														option(value="1") и
+														option(value="1") инача
+													.type Группа 1
+													a(href="#").main-button.small-button + Свойство
+													a(href="#").main-button.small-button + Группу
+											.filter-tool-content
+												- for (var k = 0; k < 3; k++)
+													.filter-tool-el.close-block
+														.icon-close
+														select.select.select-light
+															option(value="1") Свойтсво
+															option(value="1") Свойтсво
+															option(value="1") Свойтсво
+														select.select.select-light
+															option(value="1") Свойтсво
+															option(value="1") Свойтсво
+															option(value="1") Свойтсво
+														.input-row
+															input(type="text", placeholder="Значение")
+															.icon-cogwheel
 				.row-flex.modal-footer
 					a(href="#").main-button.main-button-dark Сохранить
 					a(href="#").main-button Отменить
@@ -243,22 +249,24 @@ body
 			.modal-content.hidden(data-modalcontetn='three')
 				.modal-content-coner
 				.type.modal-title Настройка сортировки:
-				.row-flex
-					a(href="#").main-button + Добавить уровень
-				.col-modal
-					.row
-						.col.col--md-8
-							.block-tools-sort.scroll
-								- for (var f = 0; f < 8; f++)
-									.wraper-block
-										.type Уровень 1
-										.block-tools-sort-wraper.close-block
-											.icon-close
-											.row
-												.col.col--md-6
-													+inputSelect('Свойство','Default value')
-												.col.col--md-6
-													+inputSelect('Свойство','Default value')
+				.wraper-scroll.scroll
+					.row-flex
+						a(href="#").main-button + Добавить уровень
+					.col-modal
+						.row
+							.col.col--md-12
+								.col.col--md-8
+									.block-tools-sort
+										- for (var f = 0; f < 8; f++)
+											.wraper-block
+												.type Уровень 1
+												.block-tools-sort-wraper.close-block
+													.icon-close
+													.row
+														.col.col--md-6
+															+inputSelect('Свойство','Default value')
+														.col.col--md-6
+															+inputSelect('Свойство','Default value')
 
 				.row-flex.modal-footer
 					a(href="#").main-button.main-button-dark Сохранить и продолжить
@@ -267,7 +275,11 @@ body
 			//Modal four
 			.modal-content.hidden(data-modalcontetn='four')
 				.modal-content-coner
-				.type.modal-title Настройка Фильтрации:
+				.breadcrumbs.breadcrumbs-modal
+					a(href="#")
+						.icon-arrows
+					a(href="#") Список инцидентов
+					a(href="#") Инцидент SR0000000370
 				.col-modal
 					.row
 						.col.col--md-8
@@ -337,6 +349,48 @@ body
 				.row-flex.modal-footer
 					a(href="#").main-button.main-button-dark Сохранить и продолжить
 					a(href="#").main-button Сбросить все
+			//Modal Six
+			.modal-content.hidden(data-modalcontetn='six')
+				.modal-content-coner
+				.type.modal-title Настройки условного выделения
+				.wraper-scroll.scroll
+					.row-flex
+						a(href="#").main-button + Добавить уровень
+					.col-modal
+						.row
+							.col.col--md-12
+									.block-tools-sort
+										.col.col--md-11
+											- for (var f = 0; f < 4; f++)
+												.wraper-block
+													.type Уровень #{f+1}
+													.block-tools-sort-wraper.close-block
+														.icon-close
+														.row-flex.row-flex-botttom
+															+checkboxRowRound('c3','Строка')
+															+checkboxRowRound('c4','Столбец')
+															+inputSelect('Выбор столбца','Default value')
+														.row-flex.row-input-flex-between
+															+inputIcon('Цвет фона','Default value','icon-cogwheel')
+															.input-row
+																span Цвет фона
+																.color-picker-wrpaer
+																	input.color-picker(type="text" value="primary" placeholder="Выбертие цвет" )
+															.input-row
+																span Цвет фона
+																select.select.select-light.selec-kindtext
+																	option(value="1") Жирный
+																	option(value="1") Курсив
+																	option(value="1") Подчеркнутый
+															.input-row
+																span Цвет фона
+																.color-picker-wrpaer
+																	input.color-picker(type="text" value="primary" placeholder="Выбертие цвет")
+				.row-flex.modal-footer
+					a(href="#").main-button.main-button-dark Сохранить и продолжить
+					a(href="#").main-button Сбросить все
+
+
 //Include footer
 include ./block_html/script.jade
 

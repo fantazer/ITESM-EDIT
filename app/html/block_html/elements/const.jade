@@ -37,3 +37,15 @@ mixin checkboxRow(id,text)
 				span
 			text #{text}
 
+mixin inputIcon(val,text,icon)
+		.input-row.input-row-icon
+			span #{val}
+			div(class="#{icon}")
+			input(type="text", placeholder="#{text}")
+
+mixin checkboxRowRound(id,text)
+		.row-flex.checkbox-row.checkbox-round
+			input(id='b#{id}', type='radio', name='rr')
+			label(for='b#{id}') 
+				span
+			text #{text}

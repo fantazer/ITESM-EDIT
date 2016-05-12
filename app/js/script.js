@@ -147,6 +147,20 @@ $(document).ready(function(){
 		})
 	})
 
+	//Color picker
+	 $('.color-picker').paletteColorPicker({
+	 	colors: [
+      {"primary": "#E91E63"},
+      {"primary_dark": "#C2185B"},
+      {"primary_light": "#F8BBD0"},
+      {"accent": "#CDDC39"},
+      {"primary_text": "#212121"},
+      {"secondary_text": "#727272"},
+      {"divider": "#B6B6B6"}
+    ],
+    position: 'downside',
+	 });
+	
 	//Style scroll
 	$(".scroll").mCustomScrollbar();
 	/* ###### init EasyDropDown style for selects  ######*/

@@ -61,12 +61,12 @@
         <div class="icon-btn icon-Delete"></div>
         <div class="icon-btn icon-Filter"></div>
         <div class="icon-btn icon-panel"></div>
-        <select class="select select-dark">
+        <select class="select select-dark select-big">
           <option value="1">Выгрузить</option>
           <option value="1">Добавить</option>
           <option value="1">Изменить</option>
         </select>
-        <select class="select">
+        <select class="select select-big">
           <option value="1">Групповое действие</option>
           <option value="1">Удалить все</option>
           <option value="1">Внести изменения</option>
@@ -379,12 +379,13 @@
           <div data-modalicon="three" class="icon-btn icon-Sorting"></div>
           <div data-modalicon="four" class="icon-btn icon-Format"></div>
           <div data-modalicon="five" class="icon-btn icon-circle"></div>
-          <select class="select select-dark">
+          <div data-modalicon="six" class="icon-btn icon-circle"></div>
+          <select class="select select-dark select-big">
             <option value="1">Сохранить</option>
             <option value="1">Добавить</option>
             <option value="1">Изменить</option>
           </select>
-          <select class="select">
+          <select class="select select-big">
             <option value="1">Сохранить как</option>
             <option value="1">Удалить все</option>
             <option value="1">Внести изменения</option>
@@ -487,143 +488,146 @@
       <!--Modal two-->
       <div data-modalcontetn="two" class="modal-content hidden">
         <div class="modal-content-coner"></div>
-        <div class="type modal-title">Настройка фильтрации:</div>
-        <div class="row-flex"><a href="#" class="main-button">+ Добавить группу</a></div>
-        <div class="col-modal">
-          <div class="filter-tool-wraper scroll">
-            <div class="row">
-              <div class="filter-tool col col--md-8">
-                <div class="filter-tool-arrow">
-                  <div class="icon-arrows"></div>
-                </div>
-                <div class="filter-tool-head">
-                  <div class="row-flex">
-                    <select class="select select-simple">
-                      <option value="1">или</option>
-                      <option value="1">и</option>
-                      <option value="1">инача</option>
-                    </select>
-                    <div class="type">Группа 1</div><a href="#" class="main-button small-button">+ Свойство</a><a href="#" class="main-button small-button">+ Группу</a>
+        <div class="breadcrumbs breadcrumbs-modal"><a href="#">
+            <div class="icon-arrows"></div></a><a href="#">Список инцидентов</a><a href="#">Инцидент SR0000000370</a></div>
+        <div class="wraper-scroll scroll">
+          <div class="row-flex"><a href="#" class="main-button">+ Добавить группу</a></div>
+          <div class="col-modal">
+            <div class="filter-tool-wraper">
+              <div class="row">
+                <div class="filter-tool col col--md-8">
+                  <div class="filter-tool-arrow">
+                    <div class="icon-arrows"></div>
                   </div>
-                </div>
-                <div class="filter-tool-content">
-                  <div class="filter-tool-el close-block">
-                    <div class="icon-close"></div>
-                    <select class="select select-light">
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                    </select>
-                    <select class="select select-light">
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                    </select>
-                    <div class="input-row">
-                      <input type="text" placeholder="Значение"/>
-                      <div class="icon-cogwheel"></div>
+                  <div class="filter-tool-head">
+                    <div class="row-flex">
+                      <select class="select select-simple">
+                        <option value="1">или</option>
+                        <option value="1">и</option>
+                        <option value="1">инача</option>
+                      </select>
+                      <div class="type">Группа 1</div><a href="#" class="main-button small-button">+ Свойство</a><a href="#" class="main-button small-button">+ Группу</a>
                     </div>
                   </div>
-                  <div class="filter-tool-el close-block">
-                    <div class="icon-close"></div>
-                    <select class="select select-light">
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                    </select>
-                    <select class="select select-light">
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                    </select>
-                    <div class="input-row">
-                      <input type="text" placeholder="Значение"/>
-                      <div class="icon-cogwheel"></div>
-                    </div>
-                  </div>
-                  <div class="filter-tool-el close-block">
-                    <div class="icon-close"></div>
-                    <select class="select select-light">
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                    </select>
-                    <select class="select select-light">
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                      <option value="1">Свойтсво</option>
-                    </select>
-                    <div class="input-row">
-                      <input type="text" placeholder="Значение"/>
-                      <div class="icon-cogwheel"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="filter-tool col col--md-12">
-                    <div class="filter-tool-arrow">
-                      <div class="icon-arrows"></div>
-                    </div>
-                    <div class="filter-tool-head">
-                      <div class="row-flex">
-                        <select class="select select-simple">
-                          <option value="1">или</option>
-                          <option value="1">и</option>
-                          <option value="1">инача</option>
-                        </select>
-                        <div class="type">Группа 1</div><a href="#" class="main-button small-button">+ Свойство</a><a href="#" class="main-button small-button">+ Группу</a>
+                  <div class="filter-tool-content">
+                    <div class="filter-tool-el close-block">
+                      <div class="icon-close"></div>
+                      <select class="select select-light">
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                      </select>
+                      <select class="select select-light">
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                      </select>
+                      <div class="input-row">
+                        <input type="text" placeholder="Значение"/>
+                        <div class="icon-cogwheel"></div>
                       </div>
                     </div>
-                    <div class="filter-tool-content">
-                      <div class="filter-tool-el close-block">
-                        <div class="icon-close"></div>
-                        <select class="select select-light">
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                        </select>
-                        <select class="select select-light">
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                        </select>
-                        <div class="input-row">
-                          <input type="text" placeholder="Значение"/>
-                          <div class="icon-cogwheel"></div>
+                    <div class="filter-tool-el close-block">
+                      <div class="icon-close"></div>
+                      <select class="select select-light">
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                      </select>
+                      <select class="select select-light">
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                      </select>
+                      <div class="input-row">
+                        <input type="text" placeholder="Значение"/>
+                        <div class="icon-cogwheel"></div>
+                      </div>
+                    </div>
+                    <div class="filter-tool-el close-block">
+                      <div class="icon-close"></div>
+                      <select class="select select-light">
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                      </select>
+                      <select class="select select-light">
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                        <option value="1">Свойтсво</option>
+                      </select>
+                      <div class="input-row">
+                        <input type="text" placeholder="Значение"/>
+                        <div class="icon-cogwheel"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="filter-tool col col--md-12">
+                      <div class="filter-tool-arrow">
+                        <div class="icon-arrows"></div>
+                      </div>
+                      <div class="filter-tool-head">
+                        <div class="row-flex">
+                          <select class="select select-simple">
+                            <option value="1">или</option>
+                            <option value="1">и</option>
+                            <option value="1">инача</option>
+                          </select>
+                          <div class="type">Группа 1</div><a href="#" class="main-button small-button">+ Свойство</a><a href="#" class="main-button small-button">+ Группу</a>
                         </div>
                       </div>
-                      <div class="filter-tool-el close-block">
-                        <div class="icon-close"></div>
-                        <select class="select select-light">
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                        </select>
-                        <select class="select select-light">
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                        </select>
-                        <div class="input-row">
-                          <input type="text" placeholder="Значение"/>
-                          <div class="icon-cogwheel"></div>
+                      <div class="filter-tool-content">
+                        <div class="filter-tool-el close-block">
+                          <div class="icon-close"></div>
+                          <select class="select select-light">
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                          </select>
+                          <select class="select select-light">
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                          </select>
+                          <div class="input-row">
+                            <input type="text" placeholder="Значение"/>
+                            <div class="icon-cogwheel"></div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="filter-tool-el close-block">
-                        <div class="icon-close"></div>
-                        <select class="select select-light">
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                        </select>
-                        <select class="select select-light">
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                          <option value="1">Свойтсво</option>
-                        </select>
-                        <div class="input-row">
-                          <input type="text" placeholder="Значение"/>
-                          <div class="icon-cogwheel"></div>
+                        <div class="filter-tool-el close-block">
+                          <div class="icon-close"></div>
+                          <select class="select select-light">
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                          </select>
+                          <select class="select select-light">
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                          </select>
+                          <div class="input-row">
+                            <input type="text" placeholder="Значение"/>
+                            <div class="icon-cogwheel"></div>
+                          </div>
+                        </div>
+                        <div class="filter-tool-el close-block">
+                          <div class="icon-close"></div>
+                          <select class="select select-light">
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                          </select>
+                          <select class="select select-light">
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                            <option value="1">Свойтсво</option>
+                          </select>
+                          <div class="input-row">
+                            <input type="text" placeholder="Значение"/>
+                            <div class="icon-cogwheel"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -639,215 +643,219 @@
       <div data-modalcontetn="three" class="modal-content hidden">
         <div class="modal-content-coner"></div>
         <div class="type modal-title">Настройка сортировки:</div>
-        <div class="row-flex"><a href="#" class="main-button">+ Добавить уровень</a></div>
-        <div class="col-modal">
-          <div class="row">
-            <div class="col col--md-8">
-              <div class="block-tools-sort scroll">
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+        <div class="wraper-scroll scroll">
+          <div class="row-flex"><a href="#" class="main-button">+ Добавить уровень</a></div>
+          <div class="col-modal">
+            <div class="row">
+              <div class="col col--md-12">
+                <div class="col col--md-8">
+                  <div class="block-tools-sort">
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
-                          </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
-                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
-                          </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
-                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
-                          </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
-                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
-                      </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="wraper-block">
-                  <div class="type">Уровень 1</div>
-                  <div class="block-tools-sort-wraper close-block">
-                    <div class="icon-close"></div>
-                    <div class="row">
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col col--md-6">
-                          <div class="input-row"><span>Свойство</span>
-                            <select class="select select-light">
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                              <option value="1">Default value</option>
-                            </select>
+                    </div>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
                           </div>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
+                          </div>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row">
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
+                          </div>
+                          <div class="col col--md-6">
+                              <div class="input-row"><span>Свойство</span>
+                                <select class="select select-light">
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                  <option value="1">Default value</option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -861,7 +869,8 @@
       <!--Modal four-->
       <div data-modalcontetn="four" class="modal-content hidden">
         <div class="modal-content-coner"></div>
-        <div class="type modal-title">Настройка Фильтрации:</div>
+        <div class="breadcrumbs breadcrumbs-modal"><a href="#">
+            <div class="icon-arrows"></div></a><a href="#">Список инцидентов</a><a href="#">Инцидент SR0000000370</a></div>
         <div class="col-modal">
           <div class="row">
             <div class="col col--md-8">
@@ -1016,6 +1025,217 @@
                   <div class="property-el">
                     <div class="property-name">Попов Иван Иванович</div>
                     <div class="property-icon"><span>-</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-flex modal-footer"><a href="#" class="main-button main-button-dark">Сохранить и продолжить</a><a href="#" class="main-button">Сбросить все</a></div>
+      </div>
+      <!--Modal Six-->
+      <div data-modalcontetn="six" class="modal-content hidden">
+        <div class="modal-content-coner"></div>
+        <div class="type modal-title">Настройки условного выделения</div>
+        <div class="wraper-scroll scroll">
+          <div class="row-flex"><a href="#" class="main-button">+ Добавить уровень</a></div>
+          <div class="col-modal">
+            <div class="row">
+              <div class="col col--md-12">
+                <div class="block-tools-sort">
+                  <div class="col col--md-11">
+                    <div class="wraper-block">
+                      <div class="type">Уровень 1</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row-flex row-flex-botttom">
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc3" type="radio" name="rr"/>
+                              <label for="bc3"> <span></span></label>
+                              <text>Строка</text>
+                            </div>
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc4" type="radio" name="rr"/>
+                              <label for="bc4"> <span></span></label>
+                              <text>Столбец</text>
+                            </div>
+                            <div class="input-row"><span>Выбор столбца</span>
+                              <select class="select select-light">
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="row-flex row-input-flex-between">
+                            <div class="input-row input-row-icon"><span>Цвет фона</span>
+                              <div class="icon-cogwheel"></div>
+                              <input type="text" placeholder="Default value"/>
+                            </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <select class="select select-light selec-kindtext">
+                              <option value="1">Жирный</option>
+                              <option value="1">Курсив</option>
+                              <option value="1">Подчеркнутый</option>
+                            </select>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 2</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row-flex row-flex-botttom">
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc3" type="radio" name="rr"/>
+                              <label for="bc3"> <span></span></label>
+                              <text>Строка</text>
+                            </div>
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc4" type="radio" name="rr"/>
+                              <label for="bc4"> <span></span></label>
+                              <text>Столбец</text>
+                            </div>
+                            <div class="input-row"><span>Выбор столбца</span>
+                              <select class="select select-light">
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="row-flex row-input-flex-between">
+                            <div class="input-row input-row-icon"><span>Цвет фона</span>
+                              <div class="icon-cogwheel"></div>
+                              <input type="text" placeholder="Default value"/>
+                            </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <select class="select select-light selec-kindtext">
+                              <option value="1">Жирный</option>
+                              <option value="1">Курсив</option>
+                              <option value="1">Подчеркнутый</option>
+                            </select>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 3</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row-flex row-flex-botttom">
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc3" type="radio" name="rr"/>
+                              <label for="bc3"> <span></span></label>
+                              <text>Строка</text>
+                            </div>
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc4" type="radio" name="rr"/>
+                              <label for="bc4"> <span></span></label>
+                              <text>Столбец</text>
+                            </div>
+                            <div class="input-row"><span>Выбор столбца</span>
+                              <select class="select select-light">
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="row-flex row-input-flex-between">
+                            <div class="input-row input-row-icon"><span>Цвет фона</span>
+                              <div class="icon-cogwheel"></div>
+                              <input type="text" placeholder="Default value"/>
+                            </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <select class="select select-light selec-kindtext">
+                              <option value="1">Жирный</option>
+                              <option value="1">Курсив</option>
+                              <option value="1">Подчеркнутый</option>
+                            </select>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wraper-block">
+                      <div class="type">Уровень 4</div>
+                      <div class="block-tools-sort-wraper close-block">
+                        <div class="icon-close"></div>
+                        <div class="row-flex row-flex-botttom">
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc3" type="radio" name="rr"/>
+                              <label for="bc3"> <span></span></label>
+                              <text>Строка</text>
+                            </div>
+                            <div class="row-flex checkbox-row checkbox-round">
+                              <input id="bc4" type="radio" name="rr"/>
+                              <label for="bc4"> <span></span></label>
+                              <text>Столбец</text>
+                            </div>
+                            <div class="input-row"><span>Выбор столбца</span>
+                              <select class="select select-light">
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                                <option value="1">Default value</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="row-flex row-input-flex-between">
+                            <div class="input-row input-row-icon"><span>Цвет фона</span>
+                              <div class="icon-cogwheel"></div>
+                              <input type="text" placeholder="Default value"/>
+                            </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <select class="select select-light selec-kindtext">
+                              <option value="1">Жирный</option>
+                              <option value="1">Курсив</option>
+                              <option value="1">Подчеркнутый</option>
+                            </select>
+                          </div>
+                          <div class="input-row"><span>Цвет фона</span>
+                            <div class="color-picker-wrpaer">
+                              <input type="text" value="primary" placeholder="Выбертие цвет" class="color-picker"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

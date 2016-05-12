@@ -30,6 +30,7 @@ wraper
 	padding 20px
 .hidden
 	display none
+placeholder()
 body
 	color #777f90
 	font-family Helvetica
@@ -44,11 +45,19 @@ a
 .row-flex
 	flex(mid)
 	justify-content flex-start
+	margin-bottom 10px
 	.main-button
 		&:first-child
 			margin-left 0
+			
+.row-input-flex-between
+	justify-content flex-between
+	.input-row
+		width 100%
+		margin 0 5px
 .green-text
 	color green
+
 
 //=== Header ===
 .header
@@ -251,6 +260,8 @@ a
 	color blue
 
 .nice-select
+	height 32px
+	line-height 32px
 	.current
 		color blue
 	.option
@@ -258,7 +269,11 @@ a
 	&:after
 		border-bottom 2px solid blue
 		border-right 2px solid blue
-	
+
+.select-big
+	height 42px
+	line-height 40px
+
 .nice-select:active, .nice-select.open, .nice-select:focus	
 	border-color blue
 
@@ -349,7 +364,8 @@ a
 	
 input[type="checkbox"]
 	display none
-
+input[type="radio"]
+	display none
 
 input[type="checkbox"] + label span
 	display inline-block;
@@ -363,6 +379,20 @@ input[type="checkbox"] + label span
 
 input[type="checkbox"]:checked + label span
 	background:url(../img/checkbox-check.png) no-repeat;
+	
+.checkbox-round
+	margin-right 20px
+input[type="radio"] + label span
+	display inline-block;
+	width 18px;
+	height 18px;
+	margin -1px 10px 0 0;
+	vertical-align middle;
+	background url(../img/input-circle-uncheck.png) no-repeat;
+	cursor pointer;
+	
+input[type="radio"]:checked + label span
+	background:url(../img/input-circle-check.png) no-repeat;
 	
 .select-simple
 	border 1px solid grey
@@ -494,6 +524,7 @@ input[type="checkbox"]:checked + label span
 		margin-right 20px
 		position relative
 		color textcolor
+		display inline-block
 		
 		&:after
 			content '/'
@@ -504,7 +535,17 @@ input[type="checkbox"]:checked + label span
 			pointer-events none
 			&:after
 				content ''
-
+.breadcrumbs-modal
+	padding 0
+	margin-bottom 20px
+	border 0px
+	a
+		&:first-child
+			margin-right 10px
+			&:after
+				content ''
+	.icon-arrows
+		transform rotate(90deg)
 .main-button
 	border-radius 25px
 	margin 0 10px
@@ -550,7 +591,7 @@ input[type="checkbox"]:checked + label span
 		color blue
 		cp()
 .input-row
-	span
+	& > span
 		display block
 		font-size 12px
 		color rgba(119, 127, 144, 0.5)
@@ -559,10 +600,13 @@ input[type="checkbox"]:checked + label span
 		width 100%
 		border 0px
 		border-bottom 1px solid grey
-		margin-top 5px
+		margin 5px
 		margin-bottom 10px
 		&:focus
 			border-bottom 1px solid red!important
+	.current
+		color rgba(119,127,144,0.5)
+
 
 .infomation-block
 	position absolute
@@ -674,8 +718,9 @@ input[type="checkbox"]:checked + label span
 	
 .modal-footer
 	position absolute
-	bottom 45px
+	bottom 25px
 	left 45px
+
 	
 .close-block
 	position relative
@@ -687,8 +732,8 @@ input[type="checkbox"]:checked + label span
 		cp()
 .block-tools-sort
 	margin-top 20px
-	height 250px
-	overflow auto
+	/*height 250px
+	overflow auto*/
 	.wraper-block
 		margin-bottom 20px
 .block-tools-sort-wraper
@@ -765,12 +810,12 @@ input[type="checkbox"]:checked + label span
 		position relative
 		input
 			margin 0
-			padding 12px 0
+			padding 8px 0
 		div[class*='icon-']
 			cp()
 			position absolute
 			right 0px
-			top 5px
+			top 0px
 			font-size 36px
 			color blue
 	.icon-close
@@ -805,8 +850,8 @@ input[type="checkbox"]:checked + label span
 	margin-bottom 10px
 	
 .filter-tool-wraper
-	height 360px
-	overflow auto
+	/*height 360px
+	overflow auto*/
 
 .icon-Back,
 .icon-Next
@@ -819,3 +864,49 @@ input[type="checkbox"]:checked + label span
 .icon-Next
 	margin-left -22px
 	line-height 20px
+	
+.input-row-icon
+	position relative
+	input
+		padding: 9px 0;
+		margin 0
+	div[class*='icon-']
+		cp()
+		position absolute
+		right 0px
+		bottom 0px
+		font-size 36px
+		color blue
+
+.text-italic
+	font-style italic
+
+.text-underline
+	text-decoration underline
+	
+.selec-kindtext
+	.list
+		li
+			&:nth-child(2)
+				font-style italic
+			&:nth-child(3)
+				text-decoration underline
+
+.color-picker-wrpaer
+	input 
+		padding 9px 0
+		margin 0
+	flex(mid)
+	.palette-color-picker-button
+		height 22px
+		
+.palette-color-picker-bubble
+	background white
+	z-index 100
+	
+.row-flex-botttom
+	align-items flex-end
+	
+.wraper-scroll
+	height 450px
+	
