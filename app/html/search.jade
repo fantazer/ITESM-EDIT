@@ -1,0 +1,59 @@
+//Include style
+include ./block_html/style.jade
+body
+
+	include ./block_html/elements/const.jade
+	
+	//Include header
+	include ./block_html/header.jade
+	.wraper
+		include ./block_html/left-menu.jade
+		.content-col
+			.top-tab-menu
+				a(href="#").top-tab-menu-active Все результаты
+				a(href="#") Инцидент
+				a(href="#") ЗНИ
+				a(href="#") Услуга
+
+			.row-flex.top-row-button
+				.type Найдено 105 записей
+				select.select.select-big
+					option(value="1") Сортировать по
+					option(value="1") Убыванию
+					option(value="1") Возрастанию
+				.icon-btn.icon-Filter
+				
+			.head-search.close-block
+				.col--md-7
+					.row-flex-between
+						.icon-close
+						.type Показать результаты за период
+						.input-row
+							span Начало периода
+							input.get-datapicker(type="text", placeholder="Выберите дату")
+						.input-row
+							span Начало периода
+							input.get-datapicker(type="text", placeholder="Выберите дату")
+						a(href="").main-button.main-button-dark Показать результаты
+			
+			- for (var a = 0; a < 5; a++)
+				.serch-el.col--md-7
+					a(href="#").type-big Инцидент №2131451
+					.type-small Дата создания 23.05.2016
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem non nam sequi nemo, accusamus a quam vitae deserunt reprehenderit, ullam eveniet tenetur ipsam earum voluptatum doloremque nostrum saepe optio eaque porro molestiae, aspernatur illum ducimus recusandae? Sint possimus dolor ex accusamus, facilis a ullam ipsam laborum quis, fugit ratione eos maiores necessitatibus odit minus? Deleniti nulla, recusandae totam cumque. Nihil officiis ratione ipsa 
+			hr
+			.row-flex
+				.table-page-el
+					span
+						.icon-Back
+				- for (var a = 0; a < 5; a++)
+					.table-page-el
+						span #{a+1} 
+				.table-page-el
+					span
+						.icon-Next
+
+//Include footer
+include ./block_html/script.jade
+
+
