@@ -266,6 +266,7 @@ a
 .nice-select
 	height 32px
 	line-height 32px
+	background none
 	.current
 		color blue
 	.option
@@ -925,13 +926,38 @@ input[type="radio"]:checked + label span
 .head-search
 	@extend .wraper-white
 	padding 20px
+	position relative
+	.coner
+		left 340px
+		border 0px
 	.icon-close
 		color blue
 		top 20px
 		right 20px
 .serch-el
 	padding 20px
+	width 820px
+	.type-mid
+		margin 5px 0
+		color #777f90
+	p
+		margin 0
+		color #565d6b
+	
 
 hr
 	border-top: 1px solid #E2E1E1
 	margin-bottom 20px
+	
+.coner
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	top: -15px;
+	background: #fff;
+	transform: rotate(45deg);
+	
+.search-wraper
+	width 820px

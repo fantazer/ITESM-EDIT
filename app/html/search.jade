@@ -18,13 +18,14 @@ body
 			.row-flex.top-row-button
 				.type Найдено 105 записей
 				select.select.select-big
-					option(value="1") Сортировать по
+					option(value="1") Сортировать по..
 					option(value="1") Убыванию
 					option(value="1") Возрастанию
 				.icon-btn.icon-Filter
 				
 			.head-search.close-block
-				.col--md-7
+				.coner
+				.search-wraper
 					.row-flex-between
 						.icon-close
 						.type Показать результаты за период
@@ -36,10 +37,10 @@ body
 							input.get-datapicker(type="text", placeholder="Выберите дату")
 						a(href="").main-button.main-button-dark Показать результаты
 			
-			- for (var a = 0; a < 5; a++)
-				.serch-el.col--md-7
+			- for (var a = 0; a < 4; a++)
+				.serch-el
 					a(href="#").type-big Инцидент №2131451
-					.type-small Дата создания 23.05.2016
+					.type-mid Дата создания 23.05.2016
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem non nam sequi nemo, accusamus a quam vitae deserunt reprehenderit, ullam eveniet tenetur ipsam earum voluptatum doloremque nostrum saepe optio eaque porro molestiae, aspernatur illum ducimus recusandae? Sint possimus dolor ex accusamus, facilis a ullam ipsam laborum quis, fugit ratione eos maiores necessitatibus odit minus? Deleniti nulla, recusandae totam cumque. Nihil officiis ratione ipsa 
 			hr
 			.row-flex
