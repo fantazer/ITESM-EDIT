@@ -126,7 +126,7 @@ $(document).ready(function(){
 					follow: [true,false],
 		 	}); 
 		})
-		$('.get-modal').click();
+	/*	$('.get-modal').click();*/
 	// Change postion coner
 		var posConer = 0
 		$('.modal-content-coner').each(function(){

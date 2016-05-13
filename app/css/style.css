@@ -377,6 +377,7 @@ a {
 .header-search {
   position: relative;
   width: 70%;
+  margin-left: 40px;
 }
 .header-search input {
   width: 100%;
@@ -513,6 +514,10 @@ a {
 }
 .header-prof-sub-el .icon-exit {
   font-size: 16px;
+}
+.header-prof-sub-el span {
+  margin-bottom: 0;
+  color: #565d6b;
 }
 .wraper {
   display: -webkit-box;
@@ -1191,6 +1196,7 @@ input[type="radio"]:checked + label span {
   position: relative;
   width: 50%;
   min-width: 800px;
+  top: 50px !important;
 }
 .modal-wraper {
   background: #fff;
@@ -1257,6 +1263,7 @@ input[type="radio"]:checked + label span {
   width: 16px;
   height: 16px;
   border: 1px solid #e1e1e1;
+  margin-right: 20px;
 }
 .property-icon span {
   text-align: center;
@@ -1334,7 +1341,7 @@ input[type="radio"]:checked + label span {
   content: '\e911';
   font-family: 'icomoon' !important;
   position: absolute;
-  left: 15px;
+  left: 10px;
   top: 5px;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -1533,4 +1540,7 @@ input[type="radio"]:checked + label span {
 }
 .wraper-scroll {
   height: 450px;
+}
+.mCSB_inside>.mCSB_container {
+  margin-right: 0;
 }
