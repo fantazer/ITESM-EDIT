@@ -961,3 +961,75 @@ hr
 	
 .search-wraper
 	width 820px
+	
+.head-tools
+	@extend .wraper-white
+	padding 20px
+	position relative
+	.coner
+		left 255px
+		border 0px
+	.icon-close
+		color blue
+		top 20px
+		right 20px
+	.type
+		margin-right 20px
+
+.head-tools-wraper
+	width 820px
+
+.icon-disable
+	color #ABE3F9
+	border 1px solid #ABE3F9
+	&:hover
+		color #ABE3F9
+		border 1px solid #ABE3F9
+		cursor auto
+
+.icon-music
+	font-size 18px
+
+.header-search-sub
+	position absolute
+	top 60px
+	padding 20px
+	background white
+	z-index 100
+	border: 1px solid #e1e1e1
+	width 100%
+	display none
+	.coner
+		right 80px
+	.block-tools-filter-el
+		&:hover
+			color textcolor
+	.filter-sub-wrap
+		.row-flex
+			margin 10px
+	.wraper-scroll
+		border: 1px solid #e1e1e1
+		padding 10px
+		height 200px
+		margin-bottom 20px
+
+.checkbox-square
+	width 18px
+	height 18px
+	display inline
+	input[type="checkbox"] + label span
+		display inline-block;
+		width 18px;
+		height 18px;
+		margin 0
+		vertical-align middle;
+		background url(../img/checkbox-square-uncheck.png) no-repeat;
+		cursor pointer;
+		
+	input[type="checkbox"]:checked + label span
+		background:url(../img/checkbox-square-check.png) no-repeat;
+
+.header-search-sub-title
+	.type
+		margin-right 20px
+		margin-bottom 10px

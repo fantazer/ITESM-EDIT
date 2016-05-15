@@ -5,7 +5,54 @@ body
 	include ./block_html/elements/const.jade
 	
 	//Include header
-	include ./block_html/header.jade
+	//include ./block_html/header.jade
+	.header
+		.header-el-left
+			a(href="#").logo
+				span ITESM
+			.header-search
+				input(type="text")
+				.icon-Search
+				.header-search-sub.close-block
+					.coner
+					.icon-close
+					.row-flex.header-search-sub-title
+						.type Список объектов и атрибутов
+						+checkboxRow("sub1","Выделить все")
+					.wraper-scroll.scroll
+						.block-tools-filter-el.filter-sub 
+							+inputSquare("sub3")
+							span ЗНИ
+							.filter-sub-wrap
+								+checkboxRow("sub2","Дата")
+						.block-tools-filter-el.filter-sub
+							+inputSquare("sub6")
+							span Услуга
+							.filter-sub-wrap
+								+checkboxRow("sub4","Дата")
+					+checkboxRow("sub5","Поиск по вложениям")
+					.row-flex
+						a(href="#").main-button.main-button-dark Найти
+						a(href="#").main-button Сбросить все
+		.header-el-right
+			.header-icon
+				a(href="#").icon-notification
+					span 4
+				a(href="#").icon-message
+			.header-prof
+				.header-prof-info
+						.type Иванов Иван
+						.type-small инженер отдела автоматизации
+				.header-prof-img
+						img(src="img/avatar.jpg", alt="")
+				.header-prof-sub-wrap
+					.header-prof-sub
+						a(href="#").header-prof-sub-el
+							i.icon-EditPerfomance
+							span.type-mid Редактировать профиль
+						a(href="#").header-prof-sub-el
+							i.icon-exit
+							span.type-mid Выйти из системы
 	.wraper
 		include ./block_html/left-menu.jade
 		.content-col
@@ -31,6 +78,22 @@ body
 					option(value="1") Групповое действие
 					option(value="1") Удалить все
 					option(value="1") Внести изменения
+
+			.head-tools.close-block
+				.coner
+				.icon-close
+				.row-flex
+					.type Для просмотра и редактирования выберите представление из выпадающего списка:
+					.input-row
+						select.select.select-light
+							option(value="1") Некоторое представление
+							option(value="1") Некоторое представление
+							option(value="1") Некоторое представление
+					//Remove class icon-disable for active
+					.icon-btn.icon-disable.icon-EditPerfomance
+				.row-flex
+					.type Для создания представления перейдите режим создания:
+					.icon-btn.icon-music
 			//Table
 			.table-nav
 				.table-count

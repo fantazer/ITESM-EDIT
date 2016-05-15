@@ -17,6 +17,11 @@ mixin input(val)
 		label(for ='#{val}') 
 			span
 
+mixin inputSquare(val)
+		.checkbox-square
+			input(id ='#{val}', type='checkbox', name='rr')
+			label(for ='#{val}') 
+				span
 mixin inputRow(val,text)
 		.input-row
 			span #{val}

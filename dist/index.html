@@ -13,11 +13,58 @@
 </html>
 <body>
   <!--Include header-->
+  <!--include ./block_html/header.jade-->
   <div class="header">
     <div class="header-el-left"><a href="#" class="logo"><span>ITESM</span></a>
       <div class="header-search">
-        <input type="h"/>
+        <input type="text"/>
         <div class="icon-Search"></div>
+        <div class="header-search-sub close-block">
+          <div class="coner"></div>
+          <div class="icon-close"></div>
+          <div class="row-flex header-search-sub-title">
+            <div class="type">Список объектов и атрибутов</div>
+              <div class="row-flex checkbox-row">
+                <input id="bsub1" type="checkbox" name="rr"/>
+                <label for="bsub1"> <span></span></label>
+                <text>Выделить все</text>
+              </div>
+          </div>
+          <div class="wraper-scroll scroll">
+            <div class="block-tools-filter-el filter-sub"> 
+                <div class="checkbox-square">
+                  <input id="sub3" type="checkbox" name="rr"/>
+                  <label for="sub3"> <span></span></label>
+                </div><span>ЗНИ</span>
+              <div class="filter-sub-wrap">
+                  <div class="row-flex checkbox-row">
+                    <input id="bsub2" type="checkbox" name="rr"/>
+                    <label for="bsub2"> <span></span></label>
+                    <text>Дата</text>
+                  </div>
+              </div>
+            </div>
+            <div class="block-tools-filter-el filter-sub">
+                <div class="checkbox-square">
+                  <input id="sub6" type="checkbox" name="rr"/>
+                  <label for="sub6"> <span></span></label>
+                </div><span>Услуга</span>
+              <div class="filter-sub-wrap">
+                  <div class="row-flex checkbox-row">
+                    <input id="bsub4" type="checkbox" name="rr"/>
+                    <label for="bsub4"> <span></span></label>
+                    <text>Дата</text>
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="row-flex checkbox-row">
+              <input id="bsub5" type="checkbox" name="rr"/>
+              <label for="bsub5"> <span></span></label>
+              <text>Поиск по вложениям</text>
+            </div>
+          <div class="row-flex"><a href="#" class="main-button main-button-dark">Найти</a><a href="#" class="main-button">Сбросить все</a></div>
+        </div>
       </div>
     </div>
     <div class="header-el-right">
@@ -71,6 +118,26 @@
           <option value="1">Удалить все</option>
           <option value="1">Внести изменения</option>
         </select>
+      </div>
+      <div class="head-tools close-block">
+        <div class="coner"></div>
+        <div class="icon-close"></div>
+        <div class="row-flex">
+          <div class="type">Для просмотра и редактирования выберите представление из выпадающего списка:</div>
+          <div class="input-row">
+            <select class="select select-light">
+              <option value="1">Некоторое представление</option>
+              <option value="1">Некоторое представление</option>
+              <option value="1">Некоторое представление</option>
+            </select>
+          </div>
+          <!--Remove class icon-disable for active-->
+          <div class="icon-btn icon-disable icon-EditPerfomance"></div>
+        </div>
+        <div class="row-flex">
+          <div class="type">Для создания представления перейдите режим создания:</div>
+          <div class="icon-btn icon-music"></div>
+        </div>
       </div>
       <!--Table-->
       <div class="table-nav">

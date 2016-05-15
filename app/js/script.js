@@ -45,6 +45,7 @@ $(document).ready(function(){
 	hideToggle('.header-prof-img','.header-prof-sub-wrap');
 	hideToggle('.table-prior','.table-prior-wraper');
 	hideToggle('.col-content .icon-Information','.infomation-block');
+	hideToggle('.header-search','.header-search-sub');
 	
 	//Toggle filter-sub
 	$('.filter-sub').click(function(){
