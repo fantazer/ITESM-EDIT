@@ -1651,6 +1651,11 @@ hr {
   width: 100%;
   display: none;
 }
+.header-search-sub .icon-close {
+  color: #0496d0;
+  top: 20px;
+  right: 20px;
+}
 .header-search-sub .coner {
   right: 80px;
 }
@@ -1686,4 +1691,7 @@ hr {
 .header-search-sub-title .type {
   margin-right: 20px;
   margin-bottom: 10px;
+}
+.search-footer {
+  margin-top: 20px;
 }
