@@ -21,7 +21,11 @@
 
 $(document).ready(function(){
 
-
+	//Toggle Form
+	$('.enter-form--title').click(function(){
+		$('.enter-form--el').addClass('hidden')
+		$('.enter-form--session').removeClass('hidden')
+	})
 	//Hide toggler
 	var hideToggle = function(targetClick,toggleEl) {
 		$(targetClick).click(function(event){

@@ -29,7 +29,7 @@ wraper
 	center(1200px)
 	padding 20px
 .hidden
-	display none
+	display none!important
 placeholder()
 body
 	color #777f90
@@ -1040,3 +1040,53 @@ hr
 
 .search-footer
 	margin-top 20px
+	
+.enter-wrap
+	width 100%
+	height 100vh
+	bgi('bg-auth.png')
+	background-size  cover
+	flex(mid)
+.enter-form
+	+below(1024px)
+		width 50%
+	background white 
+	width 30%
+.enter-form--title
+	text-align center
+	color blue
+	font-weight 700
+	font-size 40px
+	padding 40px
+	border-bottom 1px solid grey
+.enter-form--content
+	flex(mid)
+	fl()
+	padding 40px
+	width 100%
+	min-height 350px
+	form
+		
+		width 60%
+	.row-flex
+		margin-top 20px
+		flex(mid)
+		a
+			padding 10px 30px
+.enter-form--row
+	f()
+	fl()
+	margin-bottom 20px
+	width 100%
+	label
+		margin-bottom 5px
+	input
+		border 0px
+		border-bottom 1px solid grey
+		padding 10px 0px
+.enter-form--session
+	flex(mid)
+	fl()
+	.type,a
+		font-size 20px
+		margin-bottom 20px

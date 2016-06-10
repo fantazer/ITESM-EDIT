@@ -1,0 +1,36 @@
+//Include style
+include ./block_html/style.jade
+include ./block_html/elements/const.jade
+body
+	.enter-wrap
+		.enter-form
+			.enter-form--title ITESM
+			.enter-form--content
+				form(action="").enter-form--el
+					.enter-form--row
+						label Логин
+						input(type="text" placeholder="Ваше имя")
+					.enter-form--row
+						label Пароль
+						input(type="password" placeholder="Ваш пароль")
+					.enter-form--row__check
+						+checkboxRow("form1","Запомнить меня")
+					.row-flex
+						a(href="#").main-button.main-button-dark Войти
+				.enter-form--session.hidden
+					.type Ваша сессия истекла
+					.type Спасибо за пользование нашим сервисом
+					br
+					a(href="#") Войти снова через учетную запись LDAP
+					a(href="#") Войти снова, не используя учетную запись LDAP
+
+
+
+
+
+
+
+//Include footer
+include ./block_html/script.jade
+
+

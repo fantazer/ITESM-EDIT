@@ -239,7 +239,7 @@ wraper:after {
   clear: both;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 input::-webkit-input-placeholder {
   color: rgba(119,127,144,0.5);
@@ -1694,4 +1694,121 @@ hr {
 }
 .search-footer {
   margin-top: 20px;
+}
+.enter-wrap {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bg-auth.png") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.enter-form {
+  background: #fff;
+  width: 30%;
+}
+@media only screen and (max-width: 1024px) {
+  .enter-form {
+    width: 50%;
+  }
+}
+.enter-form--title {
+  text-align: center;
+  color: #0496d0;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 40px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.enter-form--content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 40px;
+  width: 100%;
+  min-height: 350px;
+}
+.enter-form--content form {
+  width: 60%;
+}
+.enter-form--content .row-flex {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.enter-form--content .row-flex a {
+  padding: 10px 30px;
+}
+.enter-form--row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.enter-form--row label {
+  margin-bottom: 5px;
+}
+.enter-form--row input {
+  border: 0px;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0px;
+}
+.enter-form--session {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.enter-form--session .type,
+.enter-form--session a {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
