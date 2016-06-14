@@ -1,0 +1,288 @@
+
+<!--Include style--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Document</title>
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css"/>
+    <link rel="stylesheet" href="bower/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="bower/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css"/>
+    <link rel="stylesheet" href="bower/nouislider/distribute/nouislider.min.css"/>
+    <link rel="stylesheet" href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css"/>
+    <link rel="stylesheet" href="bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="css/palette-color-picker.css"/>
+    <!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
+    <!--link(rel="stylesheet", href="bower/owl.carousel/dist/assets/owl.carousel.css")-->
+    <!--endbuild-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
+  </head>
+</html>
+<body>
+  <!--Include header-->
+  <div class="header">
+    <div class="header-el-left"><a href="#" class="logo"><span>ITESM</span></a>
+      <div class="header-search">
+        <input type="h"/>
+        <div class="icon-Search"></div>
+      </div>
+    </div>
+    <div class="header-el-right">
+      <div class="header-icon"><a href="#" class="icon-notification"><span>4</span></a><a href="#" class="icon-message"></a></div>
+      <div class="header-prof">
+        <div class="header-prof-info">
+          <div class="type">Иванов Иван</div>
+          <div class="type-small">инженер отдела автоматизации</div>
+        </div>
+        <div class="header-prof-img"><img src="img/avatar.jpg" alt=""/></div>
+        <div class="header-prof-sub-wrap">
+          <div class="header-prof-sub"><a href="#" class="header-prof-sub-el"><i class="icon-EditPerfomance"></i><span class="type-mid">Редактировать профиль</span></a><a href="#" class="header-prof-sub-el"><i class="icon-exit"></i><span class="type-mid">Выйти из системы</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wraper">
+    <div class="left-col">
+      <ul>
+        <li><span>Мои страницы</span>
+          <ul class="left-col-sub">
+            <li class="left-col-active"><a href="#">Рабочее место</a></li>
+            <li><a href="#">Моя страница</a></li>
+            <li><a href="#">Каталог услуг</a></li>
+            <li><a href="#">Мои задачи</a></li>
+            <li><a href="#">База знаний</a></li>
+            <li><a href="#">Мои настройки</a></li>
+          </ul>
+        </li>
+        <li> <span>Управление инцидентами</span></li>
+        <li> <span>Управление запросами на обслуживание</span></li>
+        <li><span>Управление проблемами</span></li>
+        <li> <span>Управление изменениями</span></li>
+      </ul>
+    </div>
+    <div class="content-col">
+      <div class="row">
+        <div class="col col--md-9">
+          <div class="navigation-tab">
+            <div class="navigation-tab-el"><a href="#">
+                <div class="icon-technology-call"></div>Сообщить о проблеме</a></div>
+            <div class="navigation-tab-el"><a href="#">
+                <div class="icon-instrument"></div>Запросить услугу</a></div>
+            <div class="navigation-tab-el"><a href="#">
+                <div class="icon-message2"></div>Получить консультацию</a></div>
+          </div>
+          <div class="magick-search">
+              <div class="input-row input-row--icon"><span>Чем мы можем вам помочь?</span>
+                <input type="text" placeholder="Default value"/>
+                <div class="icon-magick"></div>
+              </div>
+          </div>
+          <div class="report">
+            <div class="report-header">
+              <div class="report-header-title">Открытые обращения</div>
+              <div class="report-header-search">
+                <input type="h"/>
+                <div class="icon-Search"></div>
+              </div>
+            </div>
+            <div class="report-el">
+              <div class="report-info">
+                <div class="report-header-el-head"><a href="#" class="report-header-el-title">
+                    <div class="icon-Information"></div>INC123454565678</a>
+                  <div class="report-header-el-date">23.05.2016</div>
+                </div>
+                <div class="report-header-el-text">Все сломалось, ничего не работает. Почините, пожалуйста, быстро немедленно прямо сейчас.</div>
+                <div class="report-header-el-status">Статус: 
+                  <!-- change class for text-color (green blue orange)--><span class="orange-text">На проверке</span>
+                </div>
+              </div>
+              <div class="report-person"><img src="img/avatar.jpg" alt="" class="report-person-avatar"/><a href="#" class="report-person-name">Иванов И.И.</a>
+                <div class="report-person-status">Администратор</div>
+              </div>
+              <div class="report-val">
+                <div class="report-date">
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                  <div class="icon-arrows"></div>
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                </div>
+                <div class="table-progress">
+                  <div class="table-progress-bar">
+                    <div data-progress="45" class="table-progress-val"></div>
+                  </div><span>45%</span>
+                </div>
+              </div>
+            </div>
+            <div class="report-el">
+              <div class="report-info">
+                <div class="report-header-el-head"><a href="#" class="report-header-el-title">
+                    <div class="icon-Information"></div>INC123454565678</a>
+                  <div class="report-header-el-date">23.05.2016</div>
+                </div>
+                <div class="report-header-el-text">Все сломалось, ничего не работает. Почините, пожалуйста, быстро немедленно прямо сейчас.</div>
+                <div class="report-header-el-status">Статус: 
+                  <!-- change class for text-color (green blue orange)--><span class="orange-text">На проверке</span>
+                </div>
+              </div>
+              <div class="report-person"><img src="img/avatar.jpg" alt="" class="report-person-avatar"/><a href="#" class="report-person-name">Иванов И.И.</a>
+                <div class="report-person-status">Администратор</div>
+              </div>
+              <div class="report-val">
+                <div class="report-date">
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                  <div class="icon-arrows"></div>
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                </div>
+                <div class="table-progress">
+                  <div class="table-progress-bar">
+                    <div data-progress="45" class="table-progress-val"></div>
+                  </div><span>45%</span>
+                </div>
+              </div>
+            </div>
+            <div class="report-el">
+              <div class="report-info">
+                <div class="report-header-el-head"><a href="#" class="report-header-el-title">
+                    <div class="icon-Information"></div>INC123454565678</a>
+                  <div class="report-header-el-date">23.05.2016</div>
+                </div>
+                <div class="report-header-el-text">Все сломалось, ничего не работает. Почините, пожалуйста, быстро немедленно прямо сейчас.</div>
+                <div class="report-header-el-status">Статус: 
+                  <!-- change class for text-color (green blue orange)--><span class="orange-text">На проверке</span>
+                </div>
+              </div>
+              <div class="report-person"><img src="img/avatar.jpg" alt="" class="report-person-avatar"/><a href="#" class="report-person-name">Иванов И.И.</a>
+                <div class="report-person-status">Администратор</div>
+              </div>
+              <div class="report-val">
+                <div class="report-date">
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                  <div class="icon-arrows"></div>
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                </div>
+                <div class="table-progress">
+                  <div class="table-progress-bar">
+                    <div data-progress="45" class="table-progress-val"></div>
+                  </div><span>45%</span>
+                </div>
+              </div>
+            </div>
+            <div class="report-el">
+              <div class="report-info">
+                <div class="report-header-el-head"><a href="#" class="report-header-el-title">
+                    <div class="icon-Information"></div>INC123454565678</a>
+                  <div class="report-header-el-date">23.05.2016</div>
+                </div>
+                <div class="report-header-el-text">Все сломалось, ничего не работает. Почините, пожалуйста, быстро немедленно прямо сейчас.</div>
+                <div class="report-header-el-status">Статус: 
+                  <!-- change class for text-color (green blue orange)--><span class="orange-text">На проверке</span>
+                </div>
+              </div>
+              <div class="report-person"><img src="img/avatar.jpg" alt="" class="report-person-avatar"/><a href="#" class="report-person-name">Иванов И.И.</a>
+                <div class="report-person-status">Администратор</div>
+              </div>
+              <div class="report-val">
+                <div class="report-date">
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                  <div class="icon-arrows"></div>
+                  <div class="report-date-el">
+                    <div class="report-date-number">12</div>
+                    <div class="report-date-info">апр 16</div>
+                  </div>
+                </div>
+                <div class="table-progress">
+                  <div class="table-progress-bar">
+                    <div data-progress="45" class="table-progress-val"></div>
+                  </div><span>45%</span>
+                </div>
+              </div>
+            </div>
+            <div class="report-nav">
+              <div class="table-page">
+                <div class="table-page-el"><span>
+                    <div class="icon-Back"></div></span></div>
+                <div class="table-page-el"><span>1 </span></div>
+                <div class="table-page-el"><span>2 </span></div>
+                <div class="table-page-el"><span>3 </span></div>
+                <div class="table-page-el"><span>4 </span></div>
+                <div class="table-page-el"><span>5 </span></div>
+                <div class="table-page-el"><span>
+                    <div class="icon-Next"></div></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col--md-3">
+          <div class="news-bar">
+            <div class="news-bar-title">Новости</div>
+            <div class="news-bar-content">
+              <div class="news-bar-el">
+                <div class="news-bar-date">23.05.2016</div><a href="#" class="news-bar-name">Услуга не предоставляется</a>
+                <div class="news-bar-info">Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. </div>
+              </div>
+              <div class="news-bar-el">
+                <div class="news-bar-date">23.05.2016</div><a href="#" class="news-bar-name">Услуга не предоставляется</a>
+                <div class="news-bar-info">Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. </div>
+              </div>
+              <div class="news-bar-el">
+                <div class="news-bar-date">23.05.2016</div><a href="#" class="news-bar-name">Услуга не предоставляется</a>
+                <div class="news-bar-info">Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. </div>
+              </div>
+              <div class="news-bar-el">
+                <div class="news-bar-date">23.05.2016</div><a href="#" class="news-bar-name">Услуга не предоставляется</a>
+                <div class="news-bar-info">Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. </div>
+              </div>
+              <div class="news-bar-el">
+                <div class="news-bar-date">23.05.2016</div><a href="#" class="news-bar-name">Услуга не предоставляется</a>
+                <div class="news-bar-info">Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. </div>
+              </div>
+              <div class="news-bar-el">
+                <div class="news-bar-date">23.05.2016</div><a href="#" class="news-bar-name">Услуга не предоставляется</a>
+                <div class="news-bar-info">Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--Include footer-->
+<!--build:js js/combined.js-->
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<!--script(src="bower/owl.carousel/dist/owl.carousel.min.js")-->
+<script src="bower/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="bower/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js"></script>
+<script src="bower/nouislider/distribute/nouislider.min.js"></script>
+<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+<script src="bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/palette-color-picker.min.js"></script>
+<!--script(src="bower/Headhesive.js/dist/headhesive.min.js")-->
+<!-- endbuild-->
+<script src="js/script.js"></script>

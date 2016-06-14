@@ -57,8 +57,10 @@ a
 		margin 0 5px
 .green-text
 	color green
-
-
+.orange-text
+	color #ff830e
+.orange-blue
+	color #0496d0
 //=== Header ===
 .header
 	height 80px
@@ -1090,3 +1092,152 @@ hr
 	.type,a
 		font-size 20px
 		margin-bottom 20px
+
+.navigation-tab
+	f()
+	background white
+	bsh() 
+	margin-bottom 30px
+.navigation-tab-el
+	flex(mid)
+	width 33.33333%
+	height 80px
+	border-right 2px solid #edf3f8
+	padding 20px
+	&:last-child
+		border-right 0px
+	a
+		flex(mid)
+		[class*="icon-"]
+			margin-right 10px
+			font-size 24px
+.input-row--icon
+	position relative
+	[class*="icon-"]
+		position absolute
+		bottom 15px
+		font-size 24px
+		right 10px 
+.magick-search
+	[class*="icon-"]
+		color blue
+		font-size 40px
+		transform rotate(-30deg)
+	input
+		background none 
+	margin-bottom 30px
+.report
+	background white
+	bsh() 
+.report-header
+	padding 20px
+	flex(between)
+	border-bottom 1px solid grey
+.report-header-search
+	position relative
+	width 30%
+	margin-left 40px
+	input
+		width 100%
+		padding 10px
+		background white
+		border 0px
+		border-bottom 1px solid grey
+		width 100%
+	.icon-Search
+		position absolute
+		font-size 28px
+		color grey
+		right 0px
+		top 50%
+		margin-top -18px
+.report-header-title
+	font-size 16px
+	
+.report-el 
+	padding 15px 5px
+	border-bottom 1px solid grey
+	f()
+.report-info
+	width 50% 
+	border-right 1px solid grey
+.report-header-el-head 
+	flex(between)
+	margin-bottom 15px
+	padding 0 20px
+.report-header-el-title
+	f()
+	align-items center
+	[class*="icon-"]
+		margin-right 10px
+		font-size 20px
+//.icon-Information 
+.report-header-el-date
+	color rgba(119, 127, 144, 0.5) 
+.report-header-el-text
+	padding-left 30px
+	margin-bottom 10px 
+.report-header-el-status
+	color rgba(119, 127, 144, 0.5)
+	padding-left 30px 
+//.text-orange 
+.report-person 
+	fl()
+	flex(around)
+	width 20%
+	padding 0 20px
+	border-right 1px solid grey
+.report-person-avatar
+	width 40px
+	border-radius 50%
+	bsh()   
+.report-person-name 
+	text-align center
+.report-person-status 
+	text-align center
+.report-val 
+	width 30%
+	padding 0 40px
+.report-date
+	flex(mid) 
+	.icon-arrows
+		transform rotate(-90deg)
+		padding 20px
+		color rgba(119, 127, 144, 0.5)
+		align-self flex-start
+		font-size 26px 
+	margin-bottom 20px
+.report-date-el
+	flex(mid) 
+	fl() 
+.report-date-number 
+	color #777f90
+	font-size 30px
+	font-weight 400
+	line-height 36px
+.report-date-info 
+	color rgba(119, 127, 144, 0.5)
+	text-align center
+.report-nav
+	padding 20px
+	.table-page
+		justify-content flex-start
+.news-bar
+	background white
+	bsh() 
+.news-bar-title
+	flex(mid)
+	height 80px
+	justify-content flex-start
+	padding 20px
+	font-size 16px
+	border-bottom 1px solid grey 
+.news-bar-name
+	margin 5px 0
+	display block 
+.news-bar-el
+	border-bottom 1px solid grey 
+	padding 20px 
+.news-bar-date 
+	color rgba(119, 127, 144, 0.5)
+//.news-bar-info 

@@ -1,0 +1,90 @@
+//Include style
+include ./block_html/style.jade
+body
+
+	include ./block_html/elements/const.jade
+	
+	//Include header
+	include ./block_html/header.jade
+	.wraper
+		include ./block_html/left-menu.jade
+		.content-col
+			.row
+				.col.col--md-9
+					.navigation-tab
+						.navigation-tab-el
+							a(href="#")
+								.icon-technology-call
+								| Сообщить о проблеме
+						.navigation-tab-el
+							a(href="#")
+								.icon-instrument
+								| Запросить услугу
+						.navigation-tab-el
+							a(href="#")
+								.icon-message2
+								| Получить консультацию
+					.magick-search
+						+inputRowIcon('Чем мы можем вам помочь?','Default value','icon-magick')
+					.report
+						.report-header
+							.report-header-title Открытые обращения
+							.report-header-search
+								input(type="h")
+								.icon-Search
+						- for(var a = 0;a < 4; a++)
+							.report-el
+								.report-info
+									.report-header-el-head
+										a(href="#").report-header-el-title
+											.icon-Information
+											| INC123454565678
+										.report-header-el-date 23.05.2016
+									.report-header-el-text Все сломалось, ничего не работает. Почините, пожалуйста, быстро немедленно прямо сейчас.
+									.report-header-el-status Статус: 
+										// change class for text-color (green blue orange)
+										span.orange-text На проверке
+								.report-person
+									img(src="img/avatar.jpg", alt="").report-person-avatar
+									a(href="#").report-person-name Иванов И.И.
+									.report-person-status Администратор
+								.report-val
+									.report-date
+										.report-date-el
+											.report-date-number 12
+											.report-date-info апр 16
+										.icon-arrows
+										.report-date-el
+											.report-date-number 12
+											.report-date-info апр 16
+									.table-progress
+										.table-progress-bar
+											.table-progress-val(data-progress='45')
+										span 45%
+						.report-nav
+							.table-page
+								.table-page-el
+									span
+										.icon-Back
+								- for (var a = 0; a < 5; a++)
+									.table-page-el
+										span #{a+1} 
+								.table-page-el
+									span
+										.icon-Next
+
+				.col.col--md-3
+					.news-bar
+						.news-bar-title Новости
+						.news-bar-content
+							- for(var a = 0;a < 6; a++)	
+								.news-bar-el
+									.news-bar-date 23.05.2016
+									a(href="#").news-bar-name Услуга не предоставляется
+									.news-bar-info Услуга А временно не предоставляется с 17:00 23.05.2016 до 11:00 16.06.2016.Ведутся технические работы. 
+
+
+//Include footer
+include ./block_html/script.jade
+
+

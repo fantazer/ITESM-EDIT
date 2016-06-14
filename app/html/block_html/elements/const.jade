@@ -26,7 +26,11 @@ mixin inputRow(val,text)
 		.input-row
 			span #{val}
 			input(type="text", placeholder="#{text}")
-
+mixin inputRowIcon(val,text,icon)
+		.input-row.input-row--icon
+			span #{val}
+			input(type="text", placeholder="#{text}")
+			div(class="#{icon}")
 mixin inputSelect(val,text)
 		.input-row
 			span #{val}
